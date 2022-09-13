@@ -12,11 +12,13 @@
   text-align: center;
   min-height: 100vh;
   flex-direction: column;
+  transition: all 2s ease;
   .close{
       position: absolute;
       top:0;
       right:20px;
       padding-top: 20px;
+      cursor: pointer;
   }
   .search{
       width:100vw;

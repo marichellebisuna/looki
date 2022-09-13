@@ -1,0 +1,78 @@
+.wrapper{
+  background-color: rgba(0,0,0,0.8);
+  width:100vw;
+  height:100vh;  
+  position: fixed;  
+  transition: all 850ms ease; 
+  opacity:0;  
+  &.show{
+    opacity: 1; 
+    transition: all 850ms ease;    
+  } 
+  .list{
+    background-color: white;
+    width:400px;
+    height:100vh;
+    position:absolute;
+    right:0;
+    padding:20px; 
+    cursor: pointer;    
+    transition: all 850ms ease;
+      &.open{ 
+        transition: all 850ms ease;       
+         right:0;        
+      }
+      &.close{
+        transition: all 850ms ease;        
+        right:-400px;        
+     }
+      .top{
+        display: flex;
+        justify-content: space-between;
+      }
+      .list_item{
+        display: flex;
+        padding:10px 0;
+        img{
+          padding: 0 10px;
+          width: 90px;
+          height: 72px;
+          
+        }
+        .desc{
+          .title{
+            margin-bottom: 10px;        
+          }
+        }
+      }
+      .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+      }
+      .delete{
+        font-size: 8px !important;
+      }
+      button{
+        margin-top: 20px;
+        background-color: var(--primary-color);
+        padding: 10px 30px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        transition: all 850ms ease;
+        &:hover{
+          background-color: black;        
+          color: white;
+        }
+        
+      }
+  }
+
+ }
+

@@ -2,16 +2,19 @@
   width:100%;
   padding: 10px 0;
   position: relative;
+  // background-color: aqua;
   .container{
     width:90%;
     margin:auto;
     display:flex;
+    align-items: center;
     justify-content: space-between;
     .logo{
       cursor: pointer;
     }
     .menu ul{
       display: flex;
+      align-items: center;
       font-weight: 400;
 
       li{
@@ -23,13 +26,19 @@
           color:var(--primary-color);
         }
       }
+      a{
+        text-decoration: none;
+      }
       
     }
     .icons{   
       cursor: pointer;
       //  font-size: 18px;
+      display: flex;
+      align-items: center;
       .numbered{
-        position: relative;          
+        position: relative;    
+        // padding-left: 10px;      
         .total{
           background-color: var(--primary-color);
           border-radius: 50%;
@@ -42,8 +51,11 @@
         }
        }
       .icon{
-        margin-left: 20px;
+        // margin-left: 20px;
         transition: 0.5s all ease;
+        display: flex;
+        align-items: baseline;
+
         &:hover{
           color:var(--primary-color);
         }
