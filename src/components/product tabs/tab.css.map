@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACH,gBAAgB,EAAE,aAAa;EAC/B,MAAM,EAAC,IAAI;CACZ",
+    "sources": [
+        "tab.scss"
+    ],
+    "names": [],
+    "file": "tab.css"
+}

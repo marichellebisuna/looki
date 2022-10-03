@@ -1,0 +1,97 @@
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  -webkit-transition: all 850ms ease;
+  transition: all 850ms ease;
+  opacity: 0;
+}
+
+.wrapper.show {
+  opacity: 1;
+  -webkit-transition: all 850ms ease;
+  transition: all 850ms ease;
+}
+
+.wrapper .list {
+  background-color: white;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: all 850ms ease;
+  transition: all 850ms ease;
+}
+
+.wrapper .list.open {
+  -webkit-transition: all 850ms ease;
+  transition: all 850ms ease;
+  right: 0;
+}
+
+.wrapper .list.close {
+  -webkit-transition: all 850ms ease;
+  transition: all 850ms ease;
+  right: -400px;
+}
+
+.wrapper .list .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .list .list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+.wrapper .list .list_item img {
+  padding: 0 10px;
+  width: 90px;
+  height: 72px;
+}
+
+.wrapper .list .list_item .desc .title {
+  margin-bottom: 10px;
+}
+
+.wrapper .list .line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.wrapper .list .delete {
+  font-size: 8px !important;
+}
+
+.wrapper .list button {
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 850ms ease;
+  transition: all 850ms ease;
+}
+
+.wrapper .list button:hover {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=mylist.css.map */

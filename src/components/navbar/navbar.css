@@ -1,0 +1,302 @@
+.topbar {
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 0;
+  z-index: 4;
+}
+
+.topbar .container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.topbar .container .left .socials {
+  padding-right: 20px;
+}
+
+.topbar .container .left .socials .icon {
+  margin-right: 7px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.topbar .container .left .socials .icon:hover {
+  color: var(--primary-color);
+}
+
+.topbar .container .left .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.topbar .container .left .contact:hover {
+  color: var(--primary-color);
+}
+
+.topbar .container .left .contact .icon {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.topbar .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .container .right .settings {
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.topbar .container .right .settings:hover {
+  color: var(--primary-color);
+}
+
+.topbar .container .right .settings .account {
+  position: absolute;
+  top: 51px;
+  right: 298px;
+  z-index: 2;
+  background-color: white;
+  color: gray;
+  -webkit-box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  opacity: 1;
+}
+
+.topbar .container .right .settings .account.close {
+  opacity: 0;
+}
+
+.topbar .container .right .settings .account .line {
+  border-bottom: 1px solid #d3cbcb;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topbar .container .right .settings .account .list {
+  list-style: none;
+  margin: 10px 30px;
+}
+
+.topbar .container .right .dollar {
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.topbar .container .right .dollar:hover {
+  color: var(--primary-color);
+}
+
+.topbar .container .right .dollar .account {
+  position: absolute;
+  top: 51px;
+  right: 212px;
+  z-index: 2;
+  background-color: white;
+  color: gray;
+  -webkit-box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  opacity: 1;
+}
+
+.topbar .container .right .dollar .account.close {
+  opacity: 0;
+}
+
+.topbar .container .right .dollar .account .line {
+  border-bottom: 1px solid #d3cbcb;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topbar .container .right .dollar .account .list {
+  list-style: none;
+  margin: 10px 30px;
+}
+
+.topbar .container .right .language {
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.topbar .container .right .language:hover {
+  color: var(--primary-color);
+}
+
+.topbar .container .right .language .account {
+  position: absolute;
+  top: 51px;
+  right: 100px;
+  z-index: 2;
+  background-color: white;
+  color: gray;
+  -webkit-box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  opacity: 1;
+}
+
+.topbar .container .right .language .account.close {
+  opacity: 0;
+}
+
+.topbar .container .right .language .account .line {
+  border-bottom: 1px solid #d3cbcb;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topbar .container .right .language .account .list {
+  list-style: none;
+  margin: 10px 30px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  background-color: white;
+}
+
+.navbar.shadow {
+  top: 0;
+  -webkit-box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
+}
+
+.navbar .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.navbar .container .logo {
+  cursor: pointer;
+}
+
+.navbar .container .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+}
+
+.navbar .container .menu ul li {
+  margin-left: 20px;
+  list-style: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.navbar .container .menu ul li:hover {
+  color: var(--primary-color);
+}
+
+.navbar .container .menu ul a {
+  text-decoration: none;
+}
+
+.navbar .container .icons {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container .icons .numbered {
+  position: relative;
+}
+
+.navbar .container .icons .numbered .total {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 2px 6px;
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.navbar .container .icons .icon {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.navbar .container .icons .icon:hover {
+  color: var(--primary-color);
+}
+/*# sourceMappingURL=navbar.css.map */

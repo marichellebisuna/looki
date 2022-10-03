@@ -1,0 +1,56 @@
+.brandSlider{
+  width:85%; 
+  max-width:85%; 
+  margin:50px auto; 
+  overflow: hidden;
+  .brand-wrapper{
+     position:relative;
+     &:hover{
+      .arrow{
+        opacity: 1;
+      }
+     }
+    .arrow{          
+      background-color: black;      
+      color: white;
+      border-radius: 50%;
+      width:50px;
+      height:50px;          
+      z-index: 2;
+      position:absolute;
+      top:0;
+      bottom:0;
+      margin:auto;     
+       
+      opacity: 0;
+      transition:var(--transition);
+      cursor: pointer;  
+      &.end{
+        cursor: not-allowed;
+      }   
+      &.left{
+        left:0;               
+      }
+      &.right{
+        right:0;
+        
+      }
+    }
+    .brand-container{     
+      margin-left: 50px;
+      display:flex;  
+      align-items: center;    
+      width:max-content; 
+      transform:translateX(0px);
+      transition:var(--transition);
+     .brand{     
+      width:195px;
+      height:70px;      
+      margin-right: 5px;
+      img{        
+        object-fit:cover;
+      }
+     }
+      }
+    }
+}

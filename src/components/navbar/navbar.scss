@@ -1,14 +1,174 @@
+.topbar{
+  background-color: black;
+  color:white;
+  width:100%; 
+  // height:70px; 
+  margin:0 auto;
+  position: relative;
+  padding:10px 0;
+  z-index:4;
+  .container{
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;    
+  .left{
+    display: flex;
+    flex-direction: row;    
+    .socials{
+      padding-right: 20px;  
+      .icon{
+      margin-right:7px;
+      cursor: pointer;
+      transition: 0.5s all ease;
+      &:hover{
+        color:var(--primary-color);   
+      }
+      }    
+    } 
+    .contact{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease;
+      &:hover{
+        color:var(--primary-color);   
+      }
+    .icon{
+      margin-right:7px;
+      cursor: pointer;
+      
+      }   
+    }
+  }
+  .right{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;  
+    .settings{  
+      cursor: pointer;
+      transition: 0.5s all ease;
+      &:hover{
+        color:var(--primary-color);   
+      }     
+      .account{
+        position: absolute;
+        top:51px;
+        right:298px;
+        z-index:2;
+        background-color: white;
+        color:gray; 
+        -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
+        box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
+        transition: 0.3s all ease;
+        opacity:1;
+        &.close{
+          opacity:0;         
+        }     
+        .line{
+          border-bottom: 1px solid rgb(211, 203, 203);
+          width:80%;
+          margin: 0 auto;
+        }
+        .list{
+         list-style: none;
+          margin:10px 30px;   
+        //  border-bottom: solid 1px gray;     
+        }
+       
+      }
+    } 
+    .dollar{   
+      padding-left:10px;
+      cursor: pointer;
+      transition: 0.5s all ease;
+      &:hover{
+        color:var(--primary-color);   
+      }        
+      .account{
+        position: absolute;
+        top:51px;
+        right:212px;
+        z-index:2;
+        background-color: white;
+        color:gray; 
+        -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
+        box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);      
+        transition: 0.3s all ease;
+        opacity:1;
+        &.close{
+          opacity:0;         
+        }     
+        .line{
+          border-bottom: 1px solid rgb(211, 203, 203);
+          width:80%;
+          margin: 0 auto;
+        }
+        .list{
+         list-style: none;
+          margin:10px 30px;   
+        //  border-bottom: solid 1px gray;     
+        }
+       
+      }
+    } 
+    .language{  
+      padding-left:10px;  
+      cursor: pointer;
+      transition: 0.5s all ease;
+      &:hover{
+        color:var(--primary-color);   
+      }       
+      .account{
+        position: absolute;
+        top:51px;
+        right:100px;
+        z-index:2;
+        background-color: white;
+        color:gray; 
+        -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
+        box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);      
+        transition: 0.3s all ease;
+        opacity:1;
+        &.close{
+          opacity:0;         
+        }     
+        .line{
+          border-bottom: 1px solid rgb(211, 203, 203);
+          width:80%;
+          margin: 0 auto;
+        }
+        .list{
+         list-style: none;
+          margin:10px 30px;   
+        //  border-bottom: solid 1px gray;     
+        }
+       
+      }
+    } 
+  }
+   }
+}
+
 .navbar{
   width:100%;
   padding: 10px 0;
-  position: relative;
-  // background-color: aqua;
+  position: fixed;  
+  background-color: white;
+  &.shadow{
+    top:0;
+    -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);
+    
+    }
   .container{
-    width:90%;
+    width:80%;
     margin:auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    position:relative;
     .logo{
       cursor: pointer;
     }

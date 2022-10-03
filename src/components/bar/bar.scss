@@ -1,0 +1,52 @@
+.bar{  
+  width:80%;
+   margin:0 auto;
+   display: flex;  
+   gap:30px;    
+    .left{
+      flex:2;      
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        cursor: pointer !important;
+        &:hover{        
+          transform: scale(1.1);    
+        }        
+      }
+    }
+    .middle{
+      flex:1;      
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        cursor: pointer;
+        &:hover{
+          -moz-transform: scale(1.10) ease;
+          -webkit-transform: scale(1.10) ease;
+          -o-transform: scale(1.10) ease;
+          -ms-transform: scale(1.10) ease;
+          -webkit-transform: scale(1.10) ease;
+          transform: scale(1.10) ease; 
+        }
+      }
+    }
+    .right{
+      flex:1;      
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        cursor: pointer;
+        &:hover{
+          -moz-transform: scale(1.10) ease;
+          -webkit-transform: scale(1.10) ease;
+          -o-transform: scale(1.10) ease;
+          -ms-transform: scale(1.10) ease;
+          -webkit-transform: scale(1.10) ease;
+          transform: scale(1.10) ease; 
+        }
+      }
+    } 
+}

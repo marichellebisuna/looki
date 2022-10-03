@@ -1,0 +1,19 @@
+.hero{
+  background-color: aqua;
+  height:10vh;
+  top:110px;
+  width:100%;
+  position:absolute;
+  
+  .container{
+    display:flex;
+     .left{
+    flex:1
+  }
+  .right{
+    flex:1
+  }
+  }
+ 
+ 
+}

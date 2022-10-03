@@ -1,5 +1,5 @@
 import { Search } from '@material-ui/icons'
-import { FavoriteBorderOutlined, ShoppingBagOutlined } from '@mui/icons-material'
+import { FavoriteBorderOutlined, ShoppingBagOutlined, Facebook, Twitter, YouTube, Instagram, Call, KeyboardArrowDown } from '@mui/icons-material'
 import {useState } from 'react'
 import './navbar.scss'
 import SearchPage from '../search/Search'
@@ -9,14 +9,64 @@ import { Badge } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+const [isScroll, setIsScroll] = useState(false)
 const [openSearchPage, setOpenSearchPage] = useState(false)
-
+const [openSetting, setOpenSetting] = useState(false)
+const [openDollar, setOpenDollar] = useState(false)
+const [openLanguage, setOpenLanguage] = useState(false)
 const [showMyList, setShowMyList] = useState(false)
- const [showCart, setShowCart] = useState(false)
-
+const [showCart, setShowCart] = useState(false)
+window.onscroll=()=>{
+  setIsScroll(window.pageYOffset===0 ? false : true)
+  return ()=>window.onscroll=null
+}
   return (
     <>
-  <div className="navbar">
+  <div className="topbar">
+    <div className="container">   
+      <div className="left">
+        <div className="socials">
+        <Facebook className="icon"/>
+        <Twitter className="icon"/>
+        <YouTube className="icon"/>
+        <Instagram className="icon"/>
+        </div>
+        <div className="contact">
+          <Call className="icon"/>
+          <span> (+123)4567890</span>
+        </div>
+      </div>
+      <div className="right">
+        <div className="settings">
+          <span onClick={()=>setOpenSetting(!openSetting)}>Setting <KeyboardArrowDown /></span>
+          <div className={openSetting?"account":"account close"}>            
+            <div className="list">My Account</div> 
+            <div className="line"></div>           
+            <div className="list">Checkout</div>
+            <div className="line"></div>
+            <div className="list">Sign Out</div>
+          </div>
+        </div>
+        <div className="dollar">
+        <span onClick={()=>setOpenDollar(!openDollar)}>USD $ <KeyboardArrowDown /></span>
+          <div className={openDollar?"account":"account close"}>
+            <div className="list">EUR £</div>
+            <div className="line"></div>
+            <div className="list">US $</div>
+          </div>
+        </div>
+        <div className="language">
+        <span onClick={()=>setOpenLanguage(!openLanguage)}><img src="https://htmldemo.net/looki/looki/assets/img/logo/us-flag.jpg" alt="" srcset="" /> English <KeyboardArrowDown /></span>
+        <div className={openLanguage?"account":"account close"}>
+            <div className="list"><img src="https://htmldemo.net/looki/looki/assets/img/logo/us-flag.jpg" alt="" srcset="" /> English</div>
+            <div className="line"></div>
+            <div className="list"><img src="https://htmldemo.net/looki/looki/assets/img/logo/france.jpg" alt="" srcset="" /> Francais</div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+  <div className={isScroll?"navbar shadow":"navbar"}>
     <div className="container">
       <div className="logo"><img src="https://htmldemo.net/looki/looki/assets/img/logo/logo.png" alt="" srcset="" /></div>
       <div className="menu">
