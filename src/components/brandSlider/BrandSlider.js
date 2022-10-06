@@ -10,8 +10,8 @@ const listRef=useRef();
 
 const handleArrow = (direction) =>{
   setIsOn(true)
-  let distance = listRef.current.getBoundingClientRect().x-208
-
+  let distance = listRef.current.getBoundingClientRect().x-201
+console.log(distance)
   if(direction === 'left' && slideNumber > 0) { 
     setSlideNumber(slideNumber-1)
     listRef.current.style.transform = `translateX(${200 + distance}px)`
@@ -23,11 +23,9 @@ const handleArrow = (direction) =>{
 }
   return (
     <div className="brandSlider">
-      <div className="brand-wrapper">     
-        <KeyboardArrowLeft className={slideNumber===0?"arrow end left":"arrow left"} 
-         onClick={()=>handleArrow("left")}
-         
-        />
+      <KeyboardArrowLeft className={slideNumber===0?"arrow end left":"arrow left"} 
+         onClick={()=>handleArrow("left")}/>
+      <div className="brand-wrapper">  
         <div className="brand-container" ref={listRef}>
           {brand.map((item) => (
           <div className="brand" key={item.id}>
@@ -35,11 +33,9 @@ const handleArrow = (direction) =>{
           </div>        
           ))}
         </div>   
-           
-        <KeyboardArrowRight className="arrow right" 
-         onClick={()=>handleArrow("right")}
-        />
       </div>
+      <KeyboardArrowRight className="arrow right" 
+         onClick={()=>handleArrow("right")}/>
     </div>
   )
 }

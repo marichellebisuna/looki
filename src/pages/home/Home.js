@@ -1,5 +1,5 @@
 import Bar from '../../components/bar/Bar'
-import Banner from '../../components/bottomBanner/Banner'
+import BottomBanner from '../../components/bottomBanner/Banner'
 import BrandSlider from '../../components/brandSlider/BrandSlider'
 import Footer from '../../components/footer/Footer'
 import Hero from '../../components/hero/Hero'
@@ -19,8 +19,9 @@ const Home = () => {
         <Lowbar />
         <Bar />
         <Tab />
-        <Banner /> 
+        
       </div>
+      <BottomBanner /> 
       <SliderProduct />
       <div className="line"></div>
       <BrandSlider />
