@@ -1,15 +1,11 @@
   .home-container{
-    width:100%;
-    max-width: 80%;
+    // width:80%;
+    // max-width: 80%;
     margin: 0 auto;
-    overflow: hidden;    
-  }
-  .line{
-    width: 85%;
-    margin: 0 auto;
-    // height: 0;
-    border: 1px solid #E5E5E5;
-   
-    display:block;
-    margin-bottom: -3px;              
+    // overflow: hidden;      
+    .line{     
+      border: 1px solid #E5E5E5;   
+      display:block;
+      margin-bottom: -3px;              
+    }
   }

@@ -8,25 +8,23 @@ import Navbar from '../../components/navbar/Navbar'
 import Tab from '../../components/product tabs/Tab'
 import SliderProduct from '../../components/sliderProduct/SliderProduct'
 import './home.scss'
+import Layout from '../../components/layout/Layout'
 
 
 const Home = () => {
-  return (
-    <>
-      {/* <Navbar/> */}
+  return (   
+    <Layout>          
       <div className="home-container">
-        <Hero />
-        <Lowbar />
+        {/* <Hero /> */}
+        <Lowbar />        
         <Bar />
         <Tab />
-        
+        <BottomBanner /> 
+        <SliderProduct />
+        <div className="line"></div>
+        <BrandSlider />
       </div>
-      <BottomBanner /> 
-      <SliderProduct />
-      <div className="line"></div>
-      <BrandSlider />
-      {/* <Footer /> */}
-    </>
+    </Layout>    
   )
 }
 
