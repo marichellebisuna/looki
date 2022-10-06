@@ -13,18 +13,18 @@ import './home.scss'
 const Home = () => {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="home-container">
-        {/* <Hero />
+        <Hero />
         <Lowbar />
         <Bar />
         <Tab />
-        <Banner /> */}
-        <SliderProduct />
-        
+        <Banner /> 
       </div>
+      <SliderProduct />
+      <div className="line"></div>
       <BrandSlider />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

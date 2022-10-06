@@ -6,24 +6,20 @@ import { useRef, useState } from 'react';
 const BrandSlider = () => {
 const [slideNumber, setSlideNumber] = useState(0)
 const [isOn, setIsOn] = useState(false)
-
 const listRef=useRef();
-const cursorRef=useRef();
-
 
 const handleArrow = (direction) =>{
   setIsOn(true)
   let distance = listRef.current.getBoundingClientRect().x-208
- console.log(distance)
-if(direction === 'left' && slideNumber > 0) { 
-  setSlideNumber(slideNumber-1)
-  listRef.current.style.transform = `translateX(${200 + distance}px)`
-} 
-if(direction === 'right'&& slideNumber < 5) { 
-  setSlideNumber(slideNumber+1)
 
-  listRef.current.style.transform = `translateX(${-200 + distance}px)`
-} 
+  if(direction === 'left' && slideNumber > 0) { 
+    setSlideNumber(slideNumber-1)
+    listRef.current.style.transform = `translateX(${200 + distance}px)`
+  } 
+  if(direction === 'right'&& slideNumber < 5) { 
+    setSlideNumber(slideNumber+1)
+    listRef.current.style.transform = `translateX(${-200 + distance}px)`
+  } 
 }
   return (
     <div className="brandSlider">

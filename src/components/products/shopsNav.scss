@@ -1,0 +1,17 @@
+.shops-nav{
+  background-color: var(--banner-color);
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding:10px 0;
+  display: flex;
+  padding: 20px;
+ .grids{
+  flex: 0.5;
+ }
+ p{
+  flex:2;
+ }
+ .sort{
+  flex:2;
+ }
+}

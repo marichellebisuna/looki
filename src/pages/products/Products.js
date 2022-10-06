@@ -1,8 +1,17 @@
-import React from 'react'
+import './products.scss'
+import Banner from '../../components/products/Banner'
+import ShopsNav from '../../components/products/ShopsNav'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <div className="products">
+      <Banner/>
+      <div className="container">
+        <ShopsNav />
+      </div>
+      
+      </div>
+
   )
 }
 

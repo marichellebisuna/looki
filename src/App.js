@@ -7,6 +7,7 @@ import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import ContactUs from './pages/contacts/ContactUs';
 import Product from './pages/product/Product';
+import Footer from './components/footer/Footer';
 
 function App() {
   return ( 
@@ -17,6 +18,8 @@ function App() {
     <Route path="/contact" element={<ContactUs />}/>      
     <Route exact path="/" element={<Home />}/> 
   </Routes>  
+  
+  <Footer/>
 </BrowserRouter>  
   );
 }

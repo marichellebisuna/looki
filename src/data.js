@@ -69,4 +69,38 @@ export const brand = [
     img:"https://htmldemo.net/looki/looki/assets/img/brand/2.jpg",
     title:"brand1"
   }, 
+];
+
+export const products = [
+  {
+    id:0,
+    img:"https://htmldemo.net/looki/looki/assets/img/product/9.png",
+    title:"On Trend Makeup and Beauty Cosmetics",
+    price:11.90
+  },
+  {
+    id:1,
+    img:"https://htmldemo.net/looki/looki/assets/img/product/10.png",
+    title:"The Cosmetics and Beauty Brand Shoppe",
+    price:21.51
+  },
+  {
+    id:2,
+    img:"https://htmldemo.net/looki/looki/assets/img/product/11.png",
+    title:"Orginal Age Defying Cosmetics Makeup",
+    price:11.90
+  },
+  {
+    id:3,
+    img:"https://htmldemo.net/looki/looki/assets/img/product/12.png",
+    title:"All Natural Makeup Beauty Cosmetics",
+    price:18.90
+  },
+  {
+    id:4,
+    img:"https://htmldemo.net/looki/looki/assets/img/product/13.png",
+    title:"On Trend Makeup and Beauty Cosmetics",
+    price:11.90
+  },
+ 
 ]

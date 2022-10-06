@@ -1,4 +1,54 @@
 .sliderProduct{
-  background-color: greenyellow;
-  height:10vh;
+ width:100%; 
+ margin: 0 auto ;
+ 
+  .container{     
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:50px;
+    .title{
+      margin:20px 0;
+    }
+    .line {
+      width: 70px;
+      height: 0;
+      border: 1px solid var(--primary-color);
+      margin: 3px;
+      display:inline-block;
+    }
+    .sub-title{
+      margin:20px 0;
+    }
+  }
+  .products{
+    display:flex;
+    align-items: center;
+    position: relative;   
+    width:85%; 
+    
+    margin: 0 auto;
+    
+
+    .arrow{
+      position: absolute;
+      top:0;
+      bottom:0;
+      margin:auto;
+      border-radius: 50%;
+      background-color: black;
+      font-size: 3.5rem;
+      padding: 10px;
+      color:white;
+      z-index: 1;
+      cursor: pointer;
+      &.left{
+        left:-50px;       
+      };
+      &.right{
+        right:-50px;
+      }
+    }
+  }
 }

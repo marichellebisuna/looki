@@ -2,6 +2,7 @@ import { FacebookOutlined, Instagram, Twitter, YouTube} from '@mui/icons-materia
 import './footer.scss'
 
 const Footer = () => {
+  
   return (
     <div className="footer">      
           <div className="footer-top">
@@ -52,7 +53,7 @@ const Footer = () => {
           </div>
           <div className="footer-bottom">
             <div className="wrapper-bottom">
-              <div className="left"><p>Copyright © <span><a href="http://">MBisuna </a> </span>. All Rights Reserved</p></div>
+              <div className="left"><p>Copyright © {new Date().getFullYear()} <span><a href="http://">MBisuna </a> </span>. All Rights Reserved</p></div>
               <div className="right"><img src="https://htmldemo.net/looki/looki/assets/img/payment/1.png" alt="" srcset="" /></div>
             </div>
           </div>             

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAA;EACZ,gBAAgB,EAAE,WAAW;EAC7B,MAAM,EAAC,IAAI;CACZ",
-    "sources": [
-        "sliderProduct.scss"
-    ],
-    "names": [],
-    "file": "sliderProduct.css"
-}
