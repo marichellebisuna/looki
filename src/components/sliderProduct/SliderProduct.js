@@ -9,15 +9,16 @@ const SliderProduct = () => {
 const [slideNumber, setSlideNumber] = useState(0)
 
   const handleArrow=(direction) => {
-    let distance = listRef.current.getBoundingClientRect().x-1766
+    let distance = listRef.current.getBoundingClientRect().x-1416
     console.log(distance)
     if(direction === 'left' && slideNumber > 0) { 
       setSlideNumber(slideNumber-1)
-      listRef.current.style.transform = `translateX(${200 + distance}px)`
+      listRef.current.style.transform = `translateX(${375 + distance}px)`
+      // listRef.current.style.transform = `translateX(230)px)`
     } 
     if(direction === 'right'&& slideNumber < 5) { 
       setSlideNumber(slideNumber+1)
-      listRef.current.style.transform = `translateX(${-200 + distance}px)`
+      listRef.current.style.transform = `translateX(${-375 + distance}px)`
     } 
   }
   return (
@@ -33,9 +34,13 @@ const [slideNumber, setSlideNumber] = useState(0)
         </div>
       </div>
       <div className="products" >
-        <KeyboardArrowLeft className="arrow left" onClick={()=>handleArrow("left")}/>
-        {products.map(product =><Product product={product} key={product.id} listRef={listRef}/>)          
+        
+        <KeyboardArrowLeft className="arrow left" onClick={()=>handleArrow("left")} ref={listRef}/>
+      
+          {products.map(product =><Product product={product} key={product.id} listRef={listRef}/>)          
         }
+      
+        
         <KeyboardArrowRight className="arrow right" onClick={()=>handleArrow("right")}/>
       </div>     
     </div>

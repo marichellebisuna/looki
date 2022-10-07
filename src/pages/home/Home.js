@@ -22,8 +22,9 @@ const Home = () => {
         <BottomBanner /> 
         <SliderProduct />
         <div className="line"></div>
-        <BrandSlider />
+        <BrandSlider /> 
       </div>
+
     </Layout>    
   )
 }

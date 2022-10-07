@@ -29,11 +29,8 @@
     width:85%; 
     transform:translateX(0px);
     transition:var(--banner-transition);
-//  overflow: hidden;
-    
+    overflow: hidden;    
     margin: 0 auto;
-    
-
     .arrow{
       position: absolute;
       top:0;
@@ -53,5 +50,6 @@
         right:0;
       }
     }
+    
   }
 }
