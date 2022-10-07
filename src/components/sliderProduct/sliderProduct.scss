@@ -22,13 +22,9 @@
       margin:20px 0;
     }
   }
-  .products{
-    display:flex;
-    align-items: center;
+  .products{    
     position: relative;   
-    width:85%; 
-    transform:translateX(0px);
-    transition:var(--banner-transition);
+    width:85%;     
     overflow: hidden;    
     margin: 0 auto;
     .arrow{
@@ -50,6 +46,10 @@
         right:0;
       }
     }
-    
+    .productid{  
+      display: flex;      
+      transform:translateX(0px);
+      transition:var(--banner-transition);
+    }
   }
 }

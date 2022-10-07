@@ -1,12 +1,12 @@
 import { CompareArrowsOutlined, FavoriteBorderOutlined, Search, ShoppingCartOutlined, Star } from '@material-ui/icons'
 import './Product.scss'
 
-const Product = ({product, listRef}) => {
+const Product = ({product}) => {
  
   return (
-    <div className="product">
+    <div className="product-item">
       <div className="top">
-        <div className="product-wrapper" ref={listRef}>
+        <div className="product-wrapper" >
           <img src={product.img} alt="" srcset="" />
           <div className="picons">
           <FavoriteBorderOutlined className="icon"/>

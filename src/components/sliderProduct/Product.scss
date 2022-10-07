@@ -1,10 +1,10 @@
-.product{  
+.product-item{  
   display: flex;
   flex-direction: column;
   margin: 0 25px;
   margin-bottom: 50px;
-  -webkit-box-shadow: 4px 4px 13px -5px rgba(0,0,0,0.43); 
-  box-shadow: 4px 4px 13px -5px rgba(0,0,0,0.43);
+  -webkit-box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
+box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43);
   
   .top{     
     .product-wrapper{
