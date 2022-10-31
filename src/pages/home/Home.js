@@ -19,7 +19,7 @@ const Home = () => {
         <Lowbar />        
         <Bar />
         <Tab />
-        <BottomBanner /> 
+        {/* <BottomBanner />  */}
         <SliderProduct />
         <div className="line"></div>
         <BrandSlider /> 

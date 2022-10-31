@@ -1,0 +1,8 @@
+.typeItem{
+  font-weight: 600;
+  cursor: pointer;
+  &.active{
+    color:var(--primary-color);
+    text-decoration:underline;
+  }
+}

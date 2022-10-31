@@ -7,8 +7,7 @@ import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import ContactUs from './pages/contacts/ContactUs';
 import Product from './pages/product/Product';
-import Footer from './components/footer/Footer';
-import Navbar from './components/navbar/Navbar';
+
 
 function App() {
   return ( 

@@ -1,0 +1,31 @@
+.breadcrumb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0;
+  background-color: #efefef;  
+
+ .container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1{
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .line {
+    width: 70px;
+    height: 0;
+    border: 1px solid var(--primary-color);
+    margin: 3px;
+    display:inline-block;
+  }
+  .breadcrumbs{
+    margin-top: 15px;
+    a{
+      text-decoration: none !important;
+    }
+  }
+ }
+  
+}

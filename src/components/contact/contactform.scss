@@ -1,0 +1,67 @@
+.contactform{
+  width:80%;
+  margin:50px auto;
+  display: flex;
+  background-color: white;
+    
+  .left{    
+    flex:1;
+    padding-right: 50px;
+    hr {      
+      height: 0.25px;
+      background-color: #E5E5E5;
+      margin: 10px 0;     
+      border:none;
+    }
+    h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0;
+    }
+    .description{
+     padding-bottom: 10px;  
+    }
+    .contact-block{
+      margin:20px 0;
+      .contact-icon{
+        font-size: 24px;
+        display: flex;
+        align-items: center;       
+      }
+    }
+    
+  }
+  .right{
+    flex:1;
+    
+    h3{
+      font-size: 30px;
+    font-weight: 700;
+    }
+    form{
+      background-color: #efefef;  
+      display:flex;
+      padding:30px;
+      flex-direction: column;
+      label{
+        margin:15px 0;
+      }
+      input, textarea{
+        width:100%;
+        border:none;
+        padding:15px ;
+        z-index: 1000;
+        outline-style: none;
+      }
+      button{
+        border:none;
+        background-color: black;
+        color:white;
+        margin:20px 0;
+        width:100px;
+        padding:10px 0;
+      }
+    }
+    
+  }
+}

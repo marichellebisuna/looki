@@ -1,0 +1,14 @@
+.contactus{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+ 
+  .container{
+    width:100%;
+
+    iframe{
+      width:100vw;
+      height:500px;     
+    }
+  }
+}
