@@ -12,6 +12,7 @@
   h1{
     font-weight: 500;
     margin-bottom: 15px;
+    text-transform: capitalize;
   }
   .line {
     width: 70px;
@@ -22,6 +23,7 @@
   }
   .breadcrumbs{
     margin-top: 15px;
+    text-transform: capitalize;
     a{
       text-decoration: none !important;
     }

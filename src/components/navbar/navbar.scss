@@ -6,7 +6,7 @@
   margin:0 auto;
   position: relative;
   padding:10px 0;
-  z-index:4;
+  z-index:999999;
   .container{
     width:80%;
     margin: 0 auto;
@@ -188,6 +188,7 @@
       }
       a{
         text-decoration: none;
+        cursor: pointer;
       }
       
     }
