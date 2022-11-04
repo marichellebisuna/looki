@@ -1,0 +1,276 @@
+.cart{
+  width: 80vw;
+  margin: 100px auto;;
+  display: flex;
+  flex-direction: column;
+  .top{    
+   h1{
+    font-weight: 400;
+    margin-bottom: 10px;
+   }
+   hr{
+    height:0.25px;
+    background-color: #e5e5e5;
+    border:none;
+   }
+   table {
+    margin:50px 0;
+    border-collapse: collapse;
+    width:100%;
+   text-align: center;
+    thead{      
+      tr{
+        border-bottom: 0;
+        background-color: var(--primary-color);
+        color:white;
+        font-size: 18px;
+        font-weight: 200;   
+        th{
+           padding:20px 0;         
+        }
+      }       
+    }
+    tbody{
+      img{
+        width:150px;
+        height:150px;
+        padding-top: 5px;
+      }
+      tr {
+      border: 0.25px solid #e5e5e5;
+      border-top: 0;
+      border-right: 0;
+      border-left:0;     
+        td{
+          text-transform: capitalize;
+          padding:10px 0; 
+          span.instock{          
+          background-color: var(--primary-color);   
+          color:white;     
+          border-radius: 5px;
+          padding: 2px 4px;
+          }
+          .product-count{          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+            }
+            input{
+              height:65px;
+              width:70px;
+              border: 0.25px solid #e5e5e5;
+              border-right: 0;
+              padding: 20px 25px;
+              text-align: center;
+              outline:none;
+              font-size: 15px;            
+            }
+            .button-group{
+              display: flex;
+              flex-direction: column;
+              color: #393636;
+              .icon:first-child{
+                  border-bottom: 0;
+                }
+              .icon{
+                border: 0.25px solid #e5e5e5;
+                text-align: center;
+                cursor: pointer;
+                
+              }
+            }
+          }
+          button.submit{
+          background-color: black;
+          color:white;
+          font-size: 18px;
+          padding: 15px 30px;
+          border: none;
+          text-transform: uppercase;
+     
+
+          cursor: pointer;
+          transition: all ease 0.25s;
+          &:hover{
+            background-color: var(--primary-color);
+            color:white;
+          }
+          }
+          span.icon{
+            cursor: pointer;
+            &:hover{              
+              color:var(--primary-color);
+            }
+          }
+          
+        }
+      }
+      
+    }
+    
+    }
+  }
+  .bottom{
+    display: flex;
+    margin-top: 50px;
+    padding-right: 20px;
+    .left{
+      flex:1;
+      text-transform: capitalize;    
+      .billing-info{       
+        form{
+          display: flex;
+          flex-wrap: wrap;  
+                 
+          .selection{  
+            display: flex;
+            width:45%;   
+            margin-right:25px;
+            border: 0.25px solid #e5e5e5;
+            margin-top: 20px;
+           
+            select{            
+              border:none; 
+              color:#858383;
+              outline: none;   
+              width:350px;            
+              padding:10px;
+              font-size: 18px;
+              margin: 0;      
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              -webkit-appearance: none;
+              -moz-appearance: none;           
+            }  
+            .arrow{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto;
+              padding: 0 5px;            
+            }
+          }
+          input{
+            width:350px;       
+            margin-right:20px;
+            width:350px;   
+            font-size: 18px;   
+            padding:10px;
+            margin-top: 20px;
+            border: 0.25px solid #e5e5e5;
+            outline: none;
+            color:#858383;
+
+          }
+          button.submit{
+            margin-top: 20px;
+            background-color: var(--primary-color);
+            color:white;
+            font-size: 18px;
+            height: 50px;
+            padding: 10px 35px;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all ease 0.25s;
+            &:hover{
+              background-color: black;
+              color:white;
+            }
+          }
+        }
+        
+      }
+      .coupon-code{
+        margin: 20px 0;
+        form{
+        margin: 20px 0;
+        input{
+          width:350px;       
+          margin-right:20px;
+          width:350px;   
+          font-size: 18px;   
+          padding:10px;
+          margin-top: 20px;
+          border: 0.25px solid #e5e5e5;
+          outline: none;
+          color:#858383;
+
+        }
+        button.submit{
+          margin-top: 20px;
+          background-color: var(--primary-color);
+          color:white;
+          font-size: 18px;
+          height: 50px;
+          padding: 10px 35px;
+          border: none;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all ease 0.25s;
+          &:hover{
+            background-color: black;
+            color:white;
+          }
+          }
+        }
+      }
+    }
+     
+    .right{
+      flex:1;
+      .container{
+        form{
+          .up{
+            background-color: #efefef;  
+            padding:40px;
+            margin-bottom: 30px;
+            .order{
+              padding: 10px 0;
+              display: flex;
+              justify-content: space-between;
+              font-size: 18px;
+              span.total{
+                color: var(--primary-color);
+                font-weight: 700;
+              }
+              span.free{
+                font-size: 17px;
+              }
+            }
+            hr{
+              height:0.25px;
+              background-color: #d6d2d2;
+              border:none;
+              margin: 10px 0;
+            
+             }
+          }
+          .buttons{
+            button.submit{
+              margin-top: 20px;
+              margin-right: 20px;
+              background-color: var(--primary-color);
+              color:white;
+              font-size: 18px;
+              height: 50px;
+              padding: 10px 35px;
+              border: none;
+              text-transform: uppercase;
+              cursor: pointer;
+              transition: all ease 0.25s;
+              &:hover{
+                background-color: black;
+                color:white;
+              }
+              }
+          }
+        }
+      }
+    }
+  }
+}
