@@ -1,0 +1,181 @@
+.checkout{
+  display: flex;
+  margin: 100px auto;;
+  width: 80vw;
+  .left{
+    flex: 1;
+    padding-right: 20px;
+    .billing-info{
+      h1{
+      font-weight: 400;
+      margin-bottom: 10px;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        label{
+          margin-top: 20px;
+          font-size: 16px;
+        }
+        input{
+          width:100%; 
+          font-size: 18px;   
+          padding:10px;
+          margin-top: 10px;
+          border: 0.25px solid #e5e5e5;
+          outline: none;
+          color:#858383;
+        }
+        .selection{  
+          display: flex;
+          width:100%;   
+          margin-right:25px;
+          border: 0.25px solid #e5e5e5;
+          margin-top: 20px;
+          position:relative;
+          select{            
+            border:none; 
+            color:#858383;
+            outline: none;   
+             width:100%;            
+            padding:10px;
+            font-size: 18px;
+            margin: 0;      
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;   
+            cursor:pointer; 
+          }  
+          .arrow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0 5px;  
+            position:absolute;
+            right:0;    
+            top:10px;  
+            cursor:pointer;    
+          }
+        }
+        .together{
+         display: flex;    
+         width:100%;
+         gap:20px;   
+         .name{
+          display: flex;
+          flex-direction: column;
+          width:100%;
+                
+          label{
+            margin-top: 20px;
+            font-size: 16px;
+          }
+          input{
+            flex: 1;               
+            margin-right:10px;            
+            font-size: 18px;   
+            padding:10px;
+            margin-top: 10px;
+            border: 0.25px solid #e5e5e5;
+            outline: none;
+            color:#858383;            
+          }
+         }
+        }
+        ul{        
+          display: flex;   
+          align-items: center;   
+          justify-content: center; 
+          list-style: none;
+          margin:20px 0;
+          padding: 0;
+          gap:10px;
+          font-size: 18px;        
+        }
+        h3{
+          font-weight: 600;
+        }
+        textarea{
+          margin-top: 10px;
+          width:100%;
+          border: 0.25px solid #e5e5e5;
+          padding:20px;
+          font-size: 18px;
+          outline:none;
+        }
+       
+        
+      }
+    }   
+  }
+  .right{
+    flex: 1;
+    
+    .container{
+     h1{
+      font-weight: 400;
+      margin-bottom: 10px;
+     }
+      form{
+         margin: 30px 0;;
+        .order-details{
+          background-color: #efefef;  
+          padding:40px;
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: column;
+          hr{
+            height:0.25px;
+            background-color: #d6d2d2;
+            border:none;
+            margin: 10px 0;            
+           }
+          .order{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            span.total{
+              color: var(--primary-color);
+              font-weight: 700;
+            }
+            span.free{
+              font-size: 17px;
+            }
+          } 
+          p{
+          margin-left: 10px;
+          padding: 10px 0;;
+          }
+          span{
+          padding: 10px 0;;
+          font-size: 18px;
+          }
+        }
+        
+          button.submit{
+            margin-top: 20px;
+            margin-right: 20px;
+            background-color: var(--primary-color);
+            color:white;
+            font-size: 18px;
+            height: 50px;
+            padding: 10px 35px;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all ease 0.25s;
+            &:hover{
+              background-color: black;
+              color:white;
+            }
+          }
+       
+      }
+    }
+  }
+}

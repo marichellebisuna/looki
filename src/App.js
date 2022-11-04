@@ -9,6 +9,8 @@ import ContactUs from './pages/contacts/ContactUs';
 import AboutUs from './pages/about/AboutUs';
 import Product from './pages/product/Product';
 import Cart from './pages/cart/Cart';
+import Checkout from './pages/checkout/Checkout';
+
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
     <Route path="/products/:id" element={<Product />}/>      
     <Route path="/contact" element={<ContactUs />}/>    
     <Route path="/about" element={<AboutUs />}/>  
-    <Route path="/cart" element={<Cart />}/>      
+    <Route path="/cart" element={<Cart />}/> 
+    <Route path="/checkout" element={<Checkout />}/>      
+
 
 
     <Route exact path="/" element={<Home />}/> 

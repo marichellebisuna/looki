@@ -7,7 +7,7 @@ const Breadcrumbs = ({title}) => {
       <div className="container">
         <h1>{title}</h1>
         <div className="line"></div>
-        <div className="breadcrumbs"><Link to="/" style={{"textDecoration": "none"}}>Home</Link> > <Link to="/contact" style={{"textDecoration": "none"}}>{title}</Link></div>
+        <div className="breadcrumbs"><Link to="/" style={{"textDecoration": "none"}}>Home</Link> > <Link to={`/${title}`} style={{"textDecoration": "none"}}>{title}</Link></div>
       </div>      
     </div>
   )

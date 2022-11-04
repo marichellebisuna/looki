@@ -132,6 +132,19 @@ const Cart = () => {
                     <span>Product</span>
                     <span>Total</span>
                   </div>
+                  <hr/>
+              <div className="orders">
+                <div className="order">
+                  <span>Product Name x1</span>
+                  <span>$329</span>
+                </div>
+                <div className="order">
+                  <span>Product Name x1</span>
+                  <span>$329</span>
+                </div>
+                
+              </div>
+              <hr/>
                   <div className="order">
                     <span>Shipping</span>
                     <span className="free">Free shipping</span>
