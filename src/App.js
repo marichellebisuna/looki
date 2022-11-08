@@ -10,6 +10,9 @@ import AboutUs from './pages/about/AboutUs';
 import Product from './pages/product/Product';
 import Cart from './pages/cart/Cart';
 import Checkout from './pages/checkout/Checkout';
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
+import MyAccount from './pages/myaccount/MyAccount';
 
 
 
@@ -22,7 +25,12 @@ function App() {
     <Route path="/contact" element={<ContactUs />}/>    
     <Route path="/about" element={<AboutUs />}/>  
     <Route path="/cart" element={<Cart />}/> 
-    <Route path="/checkout" element={<Checkout />}/>      
+    <Route path="/checkout" element={<Checkout />}/>  
+    <Route path="/login" element={<Login />}/>      
+    <Route path="/register" element={<Register />}/>      
+    <Route path="/myaccount" element={<MyAccount />}/>      
+
+
 
 
 

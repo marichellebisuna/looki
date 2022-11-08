@@ -1,0 +1,67 @@
+.myaccount{  
+  width:80vw;
+  margin: 50px auto;
+  h1{
+    font-weight: 500;
+  }
+  hr{
+    height:0.25px;
+    background-color: #e5e5e5;
+    border:none;
+    margin:20px 0;
+   }
+   .container{
+    display: flex;
+    text-transform: uppercase;
+    .left{
+      flex:1;     
+      margin-right: 20px;
+      border:solid 1px #e5e5e5;
+      .account-item{
+        padding: 20px 0 10px 20px;
+        border-bottom:solid 1px #e5e5e5; 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: all ease 0.25s;
+        &:last-child{
+          border:none;
+          margin-left: 25px;
+        }
+        &:hover{
+          color: white;
+          background-color: var(--primary-color);
+        }
+      }
+    } 
+    .right{
+      flex:3;      
+      border:solid 1px #e5e5e5;
+      padding:30px;
+      h1{
+        text-transform: capitalize;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        ul{
+        list-style: none;
+        padding: 0;
+        li {
+          line-height: 30px;
+          span{
+          font-weight: 700;
+          }
+        }
+        }
+        .edit{
+          display: flex;
+          align-items: center;
+          gap:5px;
+          padding-top: 30px;
+        }
+      }
+     
+    }
+   }
+}

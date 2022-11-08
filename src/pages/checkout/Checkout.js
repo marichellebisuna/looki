@@ -2,7 +2,6 @@
 import { KeyboardArrowDown } from '@material-ui/icons'
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs'
 import Layout from '../../components/layout/Layout'
-import Lowbar from '../../components/lowbar/Lowbar'
 import './checkout.scss'
 
 const Checkout = () => {
