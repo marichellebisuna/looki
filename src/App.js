@@ -13,8 +13,7 @@ import Checkout from './pages/checkout/Checkout';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import MyAccount from './pages/myaccount/MyAccount';
-
-
+import Wishlist from './pages/wishlist/Wishlist';
 
 function App() {
   return ( 
@@ -28,11 +27,8 @@ function App() {
     <Route path="/checkout" element={<Checkout />}/>  
     <Route path="/login" element={<Login />}/>      
     <Route path="/register" element={<Register />}/>      
-    <Route path="/myaccount" element={<MyAccount />}/>      
-
-
-
-
+    <Route path="/myaccount" element={<MyAccount />}/>   
+    <Route path="/wishlist" element={<Wishlist />}/>    
 
     <Route exact path="/" element={<Home />}/> 
   </Routes>       

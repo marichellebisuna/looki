@@ -1,0 +1,113 @@
+.wishlist{
+  width:80vw;
+  margin: 100px auto;
+  h1{
+    font-weight: 400;
+    margin-bottom: 10px;
+   }
+  hr{
+    height:0.25px;
+    background-color: #e5e5e5;
+    border:none;
+    margin:20px 0;
+   }
+   table {
+    margin:50px 0;
+    border-collapse: collapse;
+    width:100%;
+   text-align: center;
+    thead{      
+      tr{
+        border-bottom: 0;
+        background-color: var(--primary-color);
+        color:white;
+        font-size: 18px;
+        font-weight: 200;   
+        th{
+           padding:20px 0;         
+        }
+      }       
+    }
+    tbody{
+      img{
+        width:150px;
+        height:150px;
+        padding-top: 5px;
+      }
+      tr {
+      border: 0.25px solid #e5e5e5;
+      border-top: 0;
+      border-right: 0;
+      border-left:0;     
+        td{
+          text-transform: capitalize;
+          padding:10px 0; 
+          span.instock{          
+          background-color: var(--primary-color);   
+          color:white;     
+          border-radius: 5px;
+          padding: 2px 4px;
+          }
+          .product-count{          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+            }
+            input{
+              height:65px;
+              width:70px;
+              border: 0.25px solid #e5e5e5;
+              border-right: 0;
+              padding: 20px 25px;
+              text-align: center;
+              outline:none;
+              font-size: 15px;            
+            }
+            .button-group{
+              display: flex;
+              flex-direction: column;
+              color: #393636;
+              .icon:first-child{
+                  border-bottom: 0;
+                }
+              .icon{
+                border: 0.25px solid #e5e5e5;
+                text-align: center;
+                cursor: pointer;
+                
+              }
+            }
+          }
+          button.submit{
+          background-color: black;
+          color:white;
+          font-size: 18px;
+          padding: 15px 30px;
+          border: none;
+          text-transform: uppercase;
+     
+
+          cursor: pointer;
+          transition: all ease 0.25s;
+          &:hover{
+            background-color: var(--primary-color);
+            color:white;
+          }
+          }
+          span.icon{
+            cursor: pointer;
+            &:hover{              
+              color:var(--primary-color);
+            }
+          }
+          
+        }
+      }
+      
+    }
+    
+    }
+}
