@@ -1,7 +1,7 @@
 import './App.scss';
 import {  
   BrowserRouter,
-  Route, Routes
+  Route, Routes, Switch
 } from "react-router-dom";
 import Home from './pages/home/Home';
 import Products from './pages/products/Products';
@@ -17,8 +17,9 @@ import Wishlist from './pages/wishlist/Wishlist';
 
 function App() {
   return ( 
-<BrowserRouter>     
+    
   <Routes>
+     <Route exact path="/" element={<Home />}/>
     <Route path="/products" element={<Products />}/>      
     <Route path="/products/:id" element={<Product />}/>      
     <Route path="/contact" element={<ContactUs />}/>    
@@ -30,9 +31,9 @@ function App() {
     <Route path="/myaccount" element={<MyAccount />}/>   
     <Route path="/wishlist" element={<Wishlist />}/>    
 
-    <Route exact path="/" element={<Home />}/> 
+    
   </Routes>       
-</BrowserRouter>  
+ 
   );
 }
 

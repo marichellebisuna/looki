@@ -1,0 +1,104 @@
+.reviews{
+  display: flex;
+  gap:30px;
+  .left{
+    flex:1;
+    .container{    
+    display:flex;
+    gap:10px; 
+    margin-bottom: 50px;
+    .picture{
+
+    }
+    .message{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .name{
+        display: flex;
+        gap:20px;
+        h3{
+          font-weight: 500;
+        }
+      }
+      .review{
+        color:var(--text-color)
+      }
+      .star{
+        color:rgb(255, 191, 0)
+      } 
+
+    }
+    .reply{      
+      color:var(--text-color);
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}
+  .right{
+    flex:1;
+    // background-color:lightblue;
+    h3{
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .rating{
+      display: flex;
+      margin: 10px 0;
+      span{
+
+      }
+      .star{
+        color:rgb(255, 191, 0)
+      } 
+    }
+    .form{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      .firstform{
+        display: flex;
+        gap:30px;
+        margin: 20px 0;
+       
+        input[type=text]{
+           width:100%;
+           padding:20px;
+          border: solid 1px #e5e5e5;
+          font-size: 15px;
+          outline: none;
+
+        }
+        
+      }
+      textarea{
+        padding:20px;
+        border: solid 1px #e5e5e5;
+
+        font-size: 15px;  
+        outline: none;
+
+      }
+      button.submit{
+        background-color: black;
+        width:160px;
+        color:white;
+        font-size: 18px;
+        padding: 15px 50px;
+        border: none;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        transition: all ease 0.25s;
+        margin-top: 30px;
+        &:hover{
+          background-color: var(--primary-color);
+          color:white;
+        }
+        }
+    }
+  }
+}

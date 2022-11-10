@@ -55,7 +55,7 @@ const Cart = () => {
                     <div className="icon"><KeyboardArrowUp/></div>
                     <div className="icon"><KeyboardArrowDown/></div>                    
                   </div>
-                </div>
+              </div>
               </td>
               <td>$38.24</td>
               <td><span className="icon"><Delete/></span></td>

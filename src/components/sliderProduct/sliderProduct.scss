@@ -1,8 +1,7 @@
 .sliderProduct{
- width:100%; 
+ width:100%;
  margin: 0 auto ;
- 
-  .container{     
+  .container{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -22,11 +21,8 @@
       margin:20px 0;
     }
   }
-  .products{    
-    position: relative;   
-    width:85%;     
-    overflow: hidden;    
-    margin: 0 auto;
+  .products{
+    position: relative; 
     .arrow{
       position: absolute;
       top:0;
@@ -40,16 +36,17 @@
       z-index: 999;
       cursor: pointer;
       &.left{
-        left:0;       
+        left:0;
       };
       &.right{
         right:0;
       }
     }
-    .productid{  
-      display: flex;      
+    .productid{
+      display: flex;
       transform:translateX(0px);
       transition:var(--banner-transition);
+   
     }
   }
 }

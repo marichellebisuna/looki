@@ -24,8 +24,8 @@ const Product = ({product}) => {
           <Star className="star"/>
           <Star className="star"/>
         </div>
-        <div className="bottom-price">
-          <div className="price">${product.price.toFixed(2)}</div>
+        <div className="together">
+          <div className="bprice">${product.price.toFixed(2)}</div>
           <ShoppingCartOutlined className="cart" />
         </div>        
       </div>

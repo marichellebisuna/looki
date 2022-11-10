@@ -5,7 +5,7 @@
   margin: 0 auto;
   position: relative;
   padding: 10px 0;
-  z-index: 4;
+  /* z-index: 4; */
 }
 
 .topbar .container {
@@ -97,7 +97,7 @@
   position: absolute;
   top: 51px;
   right: 298px;
-  z-index: 2;
+  /* z-index: 2; */
   background-color: white;
   color: gray;
   -webkit-box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
@@ -137,7 +137,7 @@
   position: absolute;
   top: 51px;
   right: 212px;
-  z-index: 2;
+  /* z-index: 2; */
   background-color: white;
   color: gray;
   -webkit-box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.32);
@@ -221,6 +221,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,6 +243,8 @@
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
+  z-index: 999;
+
 }
 
 .navbar .container .menu ul li {

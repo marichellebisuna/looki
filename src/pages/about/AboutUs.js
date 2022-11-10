@@ -6,8 +6,7 @@ import './aboutus.scss'
 
 const AboutUs = () => {
   return (
-    <Layout>
-    <div className='about'>
+  <Layout>
     
       <Breadcrumbs title="about us"/>
       
@@ -53,7 +52,7 @@ const AboutUs = () => {
     
    
     
-    </div>
+    
   </Layout>
   )
 }

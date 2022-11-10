@@ -20,7 +20,7 @@ const Home = () => {
         <Bar />
         <Tab />
         {/* <BottomBanner />  */}
-        <SliderProduct />
+        <SliderProduct title={"New Arrival Products"}/>
         <div className="line"></div>
         <BrandSlider /> 
       </div>
