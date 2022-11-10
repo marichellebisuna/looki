@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs'
 import Layout from '../../components/layout/Layout'
 import Reviews from '../../components/reviews/Reviews'
+import SliderProduct from '../../components/sliderProduct/SliderProduct'
 import './product.scss'
 
 const Product = () => {
@@ -117,6 +118,7 @@ const Product = () => {
         </div>
         
       </div>
+      <SliderProduct title="You Might Also Like" desc="Add Related products to weekly line up" />
     </div>
   </div>
   

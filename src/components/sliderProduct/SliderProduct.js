@@ -4,7 +4,7 @@ import {KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons';
 import {products} from '../../data'
 import {useRef, useState} from 'react'
 
-const SliderProduct = ({title}) => {
+const SliderProduct = ({title, desc}) => {
   const listRef = useRef()
   const arrowRef = useRef()
 
@@ -30,7 +30,7 @@ const [slideNumber, setSlideNumber] = useState(0)
         </div>
         <div className="line"></div>
         <div className="sub-title">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat.
+          <p>{desc}
           </p>
         </div>
       </div>
