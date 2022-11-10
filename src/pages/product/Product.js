@@ -90,10 +90,10 @@ const Product = () => {
         <div className="desc" onClick={handleTab3}>Reviews</div>
       </div>
       <div className="box">
-        <div className={active==="tab1"?"tab1 active":"tab"}>
+        <div className={active==="tab1"?"active":"tab"}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus id cum tempora repudiandae alias pariatur ipsam, quis officia totam maxime dolorem aliquid dignissimos porro assumenda minima eligendi inventore odio?
         </div>
-        <div className={active==="tab2"?"tab2 active":"tab"}>
+        <div className={active==="tab2"?"active":"tab"}>
         <table>          
           <tr>
             <td>Weight</td>
@@ -113,7 +113,7 @@ const Product = () => {
           </tr>
         </table>
         </div>
-        <div className={active==="tab3"?"tab3 active":"tab"}>
+        <div className={active==="tab3"?"active":"tab"}>
           <Reviews />
         </div>
         
