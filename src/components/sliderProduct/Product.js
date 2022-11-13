@@ -1,5 +1,6 @@
 import { CompareArrowsOutlined, FavoriteBorderOutlined, Search, ShoppingCartOutlined, Star } from '@material-ui/icons'
 import './Product.scss'
+// import {products} from '../../data'
 
 const Product = ({product}) => {
  

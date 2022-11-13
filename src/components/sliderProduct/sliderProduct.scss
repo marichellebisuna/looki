@@ -1,12 +1,11 @@
 .sliderProduct{
  width:100%;
- margin: 0 auto ;
+ margin: 50px auto ;
   .container{
   display:flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top:50px;
+  flex-direction: column;  
     .title{
       margin:20px 0;
     }
@@ -22,7 +21,7 @@
     }
   }
   .products{
-    position: relative; 
+    position: relative;     
     .arrow{
       position: absolute;
       top:0;
@@ -43,10 +42,11 @@
       }
     }
     .productid{
-      display: flex;
+      display: flex;  
+      gap:20px; 
       transform:translateX(0px);
-      transition:var(--banner-transition);
-   
+      margin-bottom: 20px;
+      transition:var(--banner-transition);   
     }
   }
 }

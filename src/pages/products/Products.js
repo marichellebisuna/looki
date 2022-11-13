@@ -6,7 +6,9 @@ import { useState } from 'react'
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import ShopsNav from '../../components/products/ShopsNav'
-import ProductCard from '../../components/cards/ProductCard'
+import {products} from '../../data'
+import Product from '../../components/sliderProduct/Product'
+import Pagination from '../../components/pagination/Pagination'
 
 const Products = () => { 
   
@@ -149,7 +151,11 @@ const Products = () => {
         
           <div className="right">
             <ShopsNav/>
-            <ProductCard/>
+            <div className="productid" >
+              {products.map(product =><Product product={product} key={product.id} />)          
+              }
+            </div>
+            <Pagination />
           </div>
           
         </div>
