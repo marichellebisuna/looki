@@ -1,0 +1,115 @@
+.productlist{    
+  display: flex;    
+  padding:20px;
+  -webkit-box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
+  box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
+  .left{       
+    .product-wrapper{
+      width:300px;
+      height:300px;
+      position: relative;    
+      overflow: hidden;   
+      img{      
+        object-fit: cover;
+        transition: var(--transition);
+        &:hover{
+          transform: scale(1.1);
+        }
+      } 
+      .picons{
+        display: flex;
+        position: absolute;
+        left: 50%;    
+        top: 300;
+        transform: translate(-50%, 0);
+        bottom: 0;
+        margin: auto;       
+        cursor: pointer;        
+        .icon{
+          margin-bottom: 20px;
+          border-radius: 50%;
+          font-size: 2.5rem;
+          padding: 10px;
+          font-weight: 300;
+          color:var(--text-color);
+          background-color: rgb(255, 255, 255, 0.8);
+          margin-right: 10px;
+          transition: var(--transition);
+          cursor: pointer;
+          &:hover{
+            background-color: var(--primary-color);
+            color:white;            
+          }
+        }
+      }    
+    }
+  }
+  .right{    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;;
+    width:100%;;  
+    p{ 
+      font-size: 17px;
+      margin-bottom: 10px;     
+      cursor: pointer;
+      &:hover{
+        color:var(--primary-color);
+      }
+    }
+    .stars{   
+      margin-bottom: 10px;
+      .star{
+        color:rgb(249, 195, 32);
+      }
+    }   
+    .bprice{
+      text-align: left;
+      font-weight: 700;    
+      margin-bottom: 10px;;    
+    }
+    .desc{
+      margin:5px 0;
+    }
+    .availability{
+      margin:10px 0;
+      span{
+        color: var(--primary-color);
+      }
+    }
+    button{
+      width:180px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      background-color: black;
+      padding: 10px 20px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      &:hover{
+        background-color: var(--primary-color);     
+        color: white;
+      }
+      
+    }
+    .cart{    
+      border-radius: 50%;
+      margin:0;
+      font-size: 2.5rem;
+      padding: 10px;
+      font-weight: 300;
+      color:var(--text-color);
+      background-color: rgb(0, 0, 0, 0.2);         
+      transition: var(--transition);
+      cursor: pointer;
+      &:hover{
+        background-color: var(--primary-color);
+        color:white;            
+      }
+    }      
+    
+  }
+}

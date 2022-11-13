@@ -1,13 +1,16 @@
 import { AppsOutlined} from '@material-ui/icons';
 import { FormatListBulleted} from '@mui/icons-material';
+import { useState } from 'react';
 import './shopsNav.scss';
 
-const ShopsNav = () => {
+const ShopsNav = ({show, setShow}) => {
+ const [on, setOn] = useState(false)
+
   return (
     <div className="shops-nav">
       <div className="grids">
-       <AppsOutlined className='active icon'/>
-        <FormatListBulleted className='icon'/> 
+       <AppsOutlined className='active icon' onClick={()=>setOn(!on)}/>
+        <FormatListBulleted className='icon' onClick={()=>setOn(!on)}/> 
       </div>
       <p>There are 13 products.</p>
       <div className="sort">

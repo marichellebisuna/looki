@@ -9,9 +9,13 @@
   flex: 1;  
   .icon{
     font-size: 28px; 
+    cursor: pointer;
     &.active{
     color:var(--primary-color);
     }
+    &:hover{
+      color:var(--primary-color);
+      }
   } 
  }
  p{

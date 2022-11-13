@@ -1,17 +1,18 @@
 import './products.scss'
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs'
 import Layout from '../../components/layout/Layout'
-import { AddOutlined, RemoveOutlined } from '@material-ui/icons'
+import { AddOutlined, AppsOutlined, FormatListBulleted, RemoveOutlined } from '@material-ui/icons'
 import { useState } from 'react'
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import ShopsNav from '../../components/products/ShopsNav'
 import {products} from '../../data'
 import Product from '../../components/sliderProduct/Product'
 import Pagination from '../../components/pagination/Pagination'
+import ProductList from '../../components/productList/ProductList'
 
 const Products = () => { 
-  
+  const [show, setShow] = useState(false)
+
   function valuetext(value) {
     return `${value}°C`;
   } 
@@ -150,10 +151,44 @@ const Products = () => {
           </div>
         
           <div className="right">
-            <ShopsNav/>
+          <div className="shops-nav">
+      <div className="grids">
+        {show ? 
+        <>
+        <AppsOutlined className='active icon' />
+        <FormatListBulleted className='icon' onClick={()=>setShow(!show)}/> 
+        
+        </>
+        : 
+          <>
+        <AppsOutlined className='active icon' onClick={()=>setShow(!show)}/>
+        <FormatListBulleted className='icon' />
+        </>
+        }
+       
+        
+      </div>
+      <p>There are 13 products.</p>
+      <div className="sort">
+        Sort by:
+        <select>
+          <option value="0">Open this select menu</option>
+          <option value="1">Name, A to Z</option>
+          <option value="2">Name, Z to A</option>
+          <option value="3">Price, low to high</option>
+          <option value="4">Price, high to low</option>
+        </select>
+      </div>
+    </div>
             <div className="productid" >
-              {products.map(product =><Product product={product} key={product.id} />)          
+              {products.map(product =>
+              show?
+              <Product product={product} key={product.id} /> 
+              :
+              <ProductList product={product} key={product.id} />              
+              )          
               }
+ 
             </div>
             <Pagination />
           </div>
