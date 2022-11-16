@@ -7,6 +7,7 @@ import Reviews from '../../components/reviews/Reviews'
 import SliderProduct from '../../components/sliderProduct/SliderProduct'
 import './product.scss'
 
+
 const Product = () => {
   const [active, setActive] = useState("tab1")
 
@@ -19,6 +20,18 @@ const Product = () => {
    const handleTab3=()=>{    
     setActive("tab3")
    }
+
+   const product={    
+      id:0,
+      img:["https://htmldemo.net/looki/looki/assets/img/product/9.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+      desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+      title:"On Trend Makeup and Beauty Cosmetics",
+      price:11.90,
+      type:"new", 
+      discount:0, 
+      
+    
+   }
   
   return (
     <Layout>    
@@ -27,18 +40,24 @@ const Product = () => {
    <div className="top">
      <div className="images">
       <div className="main">
-        <img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/1.jpg" alt="" srcset="" />
+        <img src={product.img[0]} alt="" srcset="" />
         <div className="new"><span className='new'>new</span> </div>
       </div>
-      <div className="sub">
-        <div className="sub1 active"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/1.jpg" alt="" srcset="" /></div>    
+
+          <div className="sub">
+        {product.img.map(item=>(
+           <div className="sub1"><img src={item} alt="" srcset="" /></div> 
+        ))}
+        {/* <div className="sub1 active"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/1.jpg" alt="" srcset="" /></div>    
         <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg" alt="" srcset="" /></div>    
         <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg" alt="" srcset="" /></div>    
-        <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg" alt="" srcset="" /></div>           
+        <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg" alt="" srcset="" /></div>            */}
       </div>
+    
+    
     </div>
     <div className="product-details">
-      <h1>Originals Windbreaker Winter Face Cream</h1>
+      <h1>{product.title}</h1>
       <div className="ratings">
         <div className="star"><StarOutlined/><StarOutlined/><StarOutlined/><StarOutlined/><StarOutlined/></div>
         <div className="review">
@@ -48,15 +67,16 @@ const Product = () => {
       </div>
       <div className="discount">
         <span className='strike'>$23.90</span> 
-        <div className="current"><span >$21.51</span></div> 
+        <div className="current"><span >${(product.price).toFixed(2)}</span></div> 
         <div className="save">Save 10%</div>
       </div>
       <div className="description">
+      
         <ul>
-        <li>Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream. </li>
-        <li>Part of the Kaval Collection.</li>
-        <li>Regular fit is eased, but not sloppy, and perfect for any activity.</li>
-        <li>Plain-woven Face Cream specifically constructed for freedom of movement.</li>
+        {product.desc.map(item=>(
+          <li>{item}</li>
+        ))}
+
         </ul>
       </div>
       <div className="addtocart">
@@ -85,13 +105,18 @@ const Product = () => {
    
     <div className="product-tabs">
       <div className="tabs">
-        <div className="desc active" onClick={handleTab1}>Description</div>
-        <div className="desc" onClick={handleTab2}>Product Details</div>
-        <div className="desc" onClick={handleTab3}>Reviews</div>
+        <div className={active==="tab1"?"desc active":"desc"} onClick={handleTab1}>Description</div>
+        <div className={active==="tab2"?"desc active":"desc"}  onClick={handleTab2}>Product Details</div>
+        <div className={active==="tab3"?"desc active":"desc"}  onClick={handleTab3}>Reviews</div>
       </div>
       <div className="box">
         <div className={active==="tab1"?"active":"tab"}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus id cum tempora repudiandae alias pariatur ipsam, quis officia totam maxime dolorem aliquid dignissimos porro assumenda minima eligendi inventore odio?
+          <ul>
+            {product.desc.map(item=>(
+              <li>{item}</li>
+            ))}
+          </ul>
+          
         </div>
         <div className={active==="tab2"?"active":"tab"}>
         <table>          

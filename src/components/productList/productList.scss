@@ -90,6 +90,9 @@
       font-size: 17px;
       margin-bottom: 10px;     
       cursor: pointer;
+      a{
+        text-decoration: none;
+      }
       &:hover{
         color:var(--primary-color);
       }
@@ -129,8 +132,7 @@
       &:hover{
         background-color: var(--primary-color);     
         color: white;
-      }
-      
+      }      
     }
     .cart{    
       border-radius: 50%;

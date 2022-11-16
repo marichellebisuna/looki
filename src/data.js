@@ -74,7 +74,7 @@ export const brand = [
 export const products = [
   {
     id:0,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/9.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/9.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
@@ -84,7 +84,7 @@ export const products = [
   },
   {
     id:1,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/10.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/10.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"The Cosmetics and Beauty Brand Shoppe",
     price:21.51,
@@ -95,7 +95,7 @@ export const products = [
   },
   {
     id:2,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/11.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/11.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"Orginal Age Defying Cosmetics Makeup",
     price:11.90,
@@ -105,7 +105,7 @@ export const products = [
   },
   {
     id:3,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/12.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/12.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"All Natural Makeup Beauty Cosmetics",
     price:18.90,
@@ -115,7 +115,7 @@ export const products = [
   },
   {
     id:4,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/13.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/13.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
@@ -125,7 +125,7 @@ export const products = [
   },
   {
     id:5,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/1.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/1.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
@@ -135,7 +135,7 @@ export const products = [
   },
   {
     id:6,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/2.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/2.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"The Cosmetics and Beauty Brand Shoppe",
     price:21.51,
@@ -145,7 +145,7 @@ export const products = [
   },
   {
     id:7,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/3.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/3.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"Orginal Age Defying Cosmetics Makeup",
     price:11.90,
@@ -155,7 +155,7 @@ export const products = [
   },
   {
     id:8,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/4.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/4.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"All Natural Makeup Beauty Cosmetics",
     price:18.90,
@@ -165,7 +165,7 @@ export const products = [
   },
   {
     id:9,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/5.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/5.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
@@ -175,7 +175,7 @@ export const products = [
   },
   {
     id:10,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/6.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/6.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
@@ -185,7 +185,7 @@ export const products = [
   },
   {
     id:11,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/2.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/2.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"The Cosmetics and Beauty Brand Shoppe",
     price:21.51,
@@ -195,7 +195,7 @@ export const products = [
   },
   {
     id:12,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/4.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/4.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"Orginal Age Defying Cosmetics Makeup",
     price:11.90,
@@ -205,7 +205,7 @@ export const products = [
   },
   {
     id:13,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/6.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/6.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"All Natural Makeup Beauty Cosmetics",
     price:18.90,
@@ -215,7 +215,7 @@ export const products = [
   },
   {
     id:14,
-    img:"https://htmldemo.net/looki/looki/assets/img/product/1.png",
+    img:["https://htmldemo.net/looki/looki/assets/img/product/1.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
     desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,

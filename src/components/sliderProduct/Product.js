@@ -1,4 +1,5 @@
-import { CompareArrowsOutlined, FavoriteBorderOutlined, Search, ShoppingCartOutlined, Star } from '@material-ui/icons'
+import { FavoriteBorderOutlined, Search, ShoppingCartOutlined, Star } from '@material-ui/icons'
+import { Link } from 'react-router-dom'
 import './Product.scss'
 // import {products} from '../../data'
 
@@ -8,23 +9,23 @@ const Product = ({product}) => {
     <div className="product-item">
       <div className="top">
         <div className="product-wrapper" >
-          <img src={product.img} alt="" srcset="" />
+        <Link to={`/products/${product.id}`}>
+          <img src={product.img[0]} alt="" srcset="" />
+        </Link>
           <div className="inner">
             <div className="together">
-              {product.discount>0? <div className="discount">-{product.discount}%</div>: <div className="spacer"/>  }
-               
+              {product.discount>0? <div className="discount">-{product.discount}%</div>: <div className="spacer"/>  }               
               <div className="type" >{product.type}</div>              
             </div>  
             <div className="picons">                     
-              <FavoriteBorderOutlined className="icon"/>
-              <CompareArrowsOutlined className="icon"/>
+              <FavoriteBorderOutlined className="icon"/>             
               <Search className="icon"/>
             </div> 
           </div>
         </div>
       </div>
       <div className="bottom">
-        <p>{product.title}</p>
+        <p><Link to={`/products/${product.id}`}>{product.title}</Link></p>
         <div className="stars">
           <Star className="star"/>
           <Star className="star"/>
