@@ -9,10 +9,17 @@ const Product = ({product}) => {
       <div className="top">
         <div className="product-wrapper" >
           <img src={product.img} alt="" srcset="" />
-          <div className="picons">
-          <FavoriteBorderOutlined className="icon"/>
-          <CompareArrowsOutlined className="icon"/>
-          <Search className="icon"/>
+          <div className="inner">
+            <div className="together">
+              {product.discount>0? <div className="discount">-{product.discount}%</div>: <div className="spacer"/>  }
+               
+              <div className="type" >{product.type}</div>              
+            </div>  
+            <div className="picons">                     
+              <FavoriteBorderOutlined className="icon"/>
+              <CompareArrowsOutlined className="icon"/>
+              <Search className="icon"/>
+            </div> 
           </div>
         </div>
       </div>

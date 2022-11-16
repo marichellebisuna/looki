@@ -11,8 +11,8 @@ console.log(desc)
           <img src={product.img} alt="" srcset="" />
           <div className="inner">
             <div className="together">
-              <div className="type">{product.type}</div>
-              <div className="discount">{product.discount}</div>   
+              {product.discount>0? <div className="discount">-{product.discount}%</div>: <div className="spacer"/>  }
+              <div className="type" >{product.type}</div>              
             </div>  
             <div className="picons">                     
               <FavoriteBorderOutlined className="icon"/>

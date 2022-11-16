@@ -1,35 +1,46 @@
+import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons'
+import { useRef, useState } from 'react'
 import './hero.scss'
+import {slide} from '../../data'
 
 const Hero = () => {
-  const data=[
-  {
-    img:"https://htmldemo.net/looki/looki/assets/img/slider/slide1.jpg",
-    title:"Facer Makeup Brush",
-    desc:"Skincare Brush Set",
-    disc:"Sale 30% Off"
-  },
-  {
-    img:"https://htmldemo.net/looki/looki/assets/img/slider/slide2.jpg",
-    title:"Morneva Shampoo",
-    desc:"Scalpcare Shampoo",
-    disc:"Sale 40% Off"
-  },
-  {
-    img:"https://htmldemo.net/looki/looki/assets/img/slider/slide3.jpg",
-    title:"Runway Lip Palette Red",
-    desc:"Lips Care Lipstick",
-    disc:"Sale 60% Off"
-  },
-]
+const [slideIndex, setSlideIndex] = useState(1);
+const listRef = useRef();
+
+const handleArrow = (direction) => {
+  if(direction==="left") {   
+    setSlideIndex(slideIndex > 0 ? slideIndex-1 : 2)
+    listRef.current.style.transform=`translateX(${slideIndex * -100}vw)`   
+  }
+  else{
+    setSlideIndex(slideIndex < 2 ? slideIndex+1 : 0)
+    listRef.current.style.transform=`translateX(${slideIndex * -100}vw)`
+  }
+}
   return (
-    <div className="hero">
-      {data.map((d)=>(
-        <div className="container">
-      <div className="right">{d.title} {d.desc}{d.disc}</div>
-        <div className="left">mmm</div>
-      </div>
-      ))}
+    <div className="hero">      
+        <KeyboardArrowLeft className='arrow left' onClick={()=>handleArrow("left")}/>
+      <div className="slider"  ref={listRef} >   
+           {slide.map((item) => (
+              <div className="slide" key={item.id}>          
+                  <div className="img"><img src={item.img} alt="" srcset="" /></div>
+                  <div className="info">
+                    <h4>{item.title}</h4> 
+                    <h1>{item.desc}</h1>
+                    <h1>{item.disc}</h1>
+                    <button type="submit">shop now</button>              
+                  </div>          
+              </div>  
+            ))}
       
+       </div> 
+        <KeyboardArrowRight className='arrow right' onClick={()=>handleArrow("right")}/> 
+     
+      <div className="dots">
+        <div className="dot active"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
     </div>
   )
 }

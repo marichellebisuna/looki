@@ -68,7 +68,7 @@ window.onscroll=()=>{
   </div>
   <div className={isScroll?"navbar shadow":"navbar"}>
     <div className="container">
-      <div className="logo"><img src="https://htmldemo.net/looki/looki/assets/img/logo/logo.png" alt="" srcset="" /></div>
+      <div className="logo"><Link to='/'><img src="https://htmldemo.net/looki/looki/assets/img/logo/logo.png" alt="" srcset="" /></Link></div>
       <div className="menu">
         <ul>
           <li><Link to='/'>Home</Link></li>
@@ -85,20 +85,20 @@ window.onscroll=()=>{
         <Badge badgeContent={4} color="primary">
            <FavoriteBorderOutlined />   
         </Badge>  
-          {/* <FavoriteBorderOutlined  className="icon"/>            */}
+        
         <span className='total'>5</span>
       
         </span>
         
         <span className="numbered" style={{'paddingLeft':'5px'}} onClick={()=>
-        // <Mylist setShowList={showMyList} toggle={setShowMyList(!showMyList)}/>}
+       
          setShowCart(!showCart)}
         
         >
             <Badge badgeContent={4} color="primary">
               <ShoppingBagOutlined />
             </Badge>  
-          {/* <ShoppingBagOutlined  className="icon"/> */}
+       
           <span className='total'>5</span>
          
         </span>
@@ -108,9 +108,9 @@ window.onscroll=()=>{
 
 
   </div> 
- {openSearchPage && <SearchPage setOpen={setOpenSearchPage} />}
+ {/* {openSearchPage && <SearchPage setOpen={setOpenSearchPage} />}
   { <Mylist setShowMyList={setShowMyList} showMyList={showMyList}/>}
-  {<SideCart showCart={showCart} setShowCart={setShowCart}/>}
+  {<SideCart showCart={showCart} setShowCart={setShowCart}/>} */}
   </>
   )
 }

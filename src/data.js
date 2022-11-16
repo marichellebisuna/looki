@@ -79,7 +79,7 @@ export const products = [
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
     type:"new", 
-    discount:10, 
+    discount:0, 
     
   },
   {
@@ -89,7 +89,7 @@ export const products = [
     title:"The Cosmetics and Beauty Brand Shoppe",
     price:21.51,
     type:"onsale",
-    discount:0, 
+    discount:10, 
     
 
   },
@@ -100,7 +100,7 @@ export const products = [
     title:"Orginal Age Defying Cosmetics Makeup",
     price:11.90,
     type:"upcoming",   
-    discount:10, 
+    discount:0, 
 
   },
   {
@@ -110,7 +110,7 @@ export const products = [
     title:"All Natural Makeup Beauty Cosmetics",
     price:18.90,
     type:"featured", 
-    discount:0, 
+    discount:20, 
 
   },
   {
@@ -140,7 +140,7 @@ export const products = [
     title:"The Cosmetics and Beauty Brand Shoppe",
     price:21.51,
     type:"new",
-    discount:10, 
+    discount:0, 
 
   },
   {
@@ -150,7 +150,7 @@ export const products = [
     title:"Orginal Age Defying Cosmetics Makeup",
     price:11.90,
     type:"featured", 
-    discount:0, 
+    discount:20, 
 
   },
   {
@@ -160,7 +160,7 @@ export const products = [
     title:"All Natural Makeup Beauty Cosmetics",
     price:18.90,
     type:"upcoming",
-    discount:10, 
+    discount:0, 
 
   },
   {
@@ -190,7 +190,7 @@ export const products = [
     title:"The Cosmetics and Beauty Brand Shoppe",
     price:21.51,
     type:"featured",
-    discount:0, 
+    discount:20, 
 
   },
   {
@@ -200,7 +200,7 @@ export const products = [
     title:"Orginal Age Defying Cosmetics Makeup",
     price:11.90,
     type:"new", 
-    discount:10, 
+    discount:0, 
 
   },
   {
@@ -210,7 +210,7 @@ export const products = [
     title:"All Natural Makeup Beauty Cosmetics",
     price:18.90,
     type:"onsale",  
-    discount:0, 
+    discount:10, 
 
   },
   {
@@ -220,12 +220,12 @@ export const products = [
     title:"On Trend Makeup and Beauty Cosmetics",
     price:11.90,
     type:"upcoming", 
-    discount:10, 
+    discount:0, 
 
   },
 ]
 
-export const type =[
+export const type = [
   {
     id:"new",
     title:"New Products",
@@ -238,4 +238,35 @@ export const type =[
     id:"upcoming",
     title:"Upcoming Products",
   },
+]
+export const slide = [
+  {
+    id:0,
+    img:"https://htmldemo.net/looki/looki/assets/img/slider/slide1.jpg",
+    title:"Facer Makeup Brush",
+    desc:"Skincare Brush Set",
+    disc:"Sale 30% Off"
+  },
+   {
+    id:1,
+    img:"https://htmldemo.net/looki/looki/assets/img/slider/slide2.jpg",
+    title:"Morneva Shampoo",
+    desc:"Scalpcare Shampoo",
+    disc:"Sale 40% Off"
+  },
+  {
+    id:2,
+    img:"https://htmldemo.net/looki/looki/assets/img/slider/slide3.jpg",
+    title:"Runway Lip Palette Red",
+    desc:"Lips Care Lipstick",
+    disc:"Sale 60% Off"
+  },
+  // {
+  //   id:3,
+  //   img:"https://htmldemo.net/looki/looki/assets/img/slider/slide3.jpg",
+  //   title:"Runway Lip Palette Red",
+  //   desc:"Lips Care Lipstick",
+  //   disc:"Sale 60% Off"
+  // },
+ 
 ]

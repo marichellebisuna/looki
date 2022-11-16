@@ -161,8 +161,8 @@ const Products = () => {
         </>
         : 
           <>
-        <AppsOutlined className='active icon' onClick={()=>setShow(!show)}/>
-        <FormatListBulleted className='icon' />
+        <AppsOutlined className='icon' onClick={()=>setShow(!show)}/>
+        <FormatListBulleted className='active icon' />
         </>
         }
        

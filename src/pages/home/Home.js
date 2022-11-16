@@ -15,11 +15,11 @@ const Home = () => {
   return (   
     <Layout>          
       <div className="home-container">
-        {/* <Hero /> */}
+        <Hero />
         <Lowbar />        
         <Bar />
         <Tab />
-        {/* <BottomBanner />  */}
+        <BottomBanner /> 
         <SliderProduct title={"New Arrival Products"} desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat."}/>
         <div className="line"></div>
         <BrandSlider /> 

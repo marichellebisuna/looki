@@ -1,12 +1,10 @@
 .topbar{
   background-color: black;
   color:white;
-  width:100%; 
-  // height:70px; 
+  width:100%;   
   margin:0 auto;
   position: relative;
-  padding:10px 0;
-  // z-index:999999;
+  padding:10px 0;  
   .container{
     width:80%;
     margin: 0 auto;
@@ -37,8 +35,7 @@
       }
     .icon{
       margin-right:7px;
-      cursor: pointer;
-      
+      cursor: pointer;      
       }   
     }
   }
@@ -73,10 +70,8 @@
         }
         .list{
          list-style: none;
-          margin:10px 30px;   
-        //  border-bottom: solid 1px gray;     
-        }
-       
+          margin:10px 30px;     
+        }       
       }
     } 
     .dollar{   
@@ -107,10 +102,8 @@
         }
         .list{
          list-style: none;
-          margin:10px 30px;   
-        //  border-bottom: solid 1px gray;     
-        }
-       
+          margin:10px 30px;           
+        }       
       }
     } 
     .language{  
@@ -140,9 +133,8 @@
           margin: 0 auto;
         }
         .list{
-         list-style: none;
-          margin:10px 30px;   
-        //  border-bottom: solid 1px gray;     
+          list-style: none;
+          margin:10px 30px;             
         }
        
       }
@@ -156,11 +148,12 @@
   padding: 10px 0;
   position: fixed;  
   background-color: white;
+  z-index: 99999;
+  margin-bottom: 110px;
   &.shadow{
     top:0;
     -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
-    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);
-    
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);    
     }
   .container{
     width:80%;
@@ -176,7 +169,6 @@
       display: flex;
       align-items: center;
       font-weight: 400;
-
       li{
         margin-left: 20px;
         list-style: none;
@@ -189,17 +181,14 @@
       a{
         text-decoration: none;
         cursor: pointer;
-      }
-      
+      }      
     }
     .icons{   
-      cursor: pointer;
-      //  font-size: 18px;
+      cursor: pointer;     
       display: flex;
       align-items: center;
       .numbered{
-        position: relative;    
-        // padding-left: 10px;      
+        position: relative;         
         .total{
           background-color: var(--primary-color);
           border-radius: 50%;
@@ -211,17 +200,14 @@
           right:-10px;
         }
        }
-      .icon{
-        // margin-left: 20px;
+      .icon{        
         transition: 0.5s all ease;
         display: flex;
         align-items: baseline;
-
         &:hover{
           color:var(--primary-color);
         }
-      }
-      
+      }      
     }
   }
 }
