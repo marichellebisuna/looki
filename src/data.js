@@ -224,7 +224,17 @@ export const products = [
 
   },
 ]
-
+export const product = [
+  {
+    id:0,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/9.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"On Trend Makeup and Beauty Cosmetics",
+    price:11.90,
+    type:"new", 
+    discount:0,     
+  }
+]
 export const type = [
   {
     id:"new",

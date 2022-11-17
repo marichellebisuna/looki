@@ -7,12 +7,14 @@ import Tab from '../../components/product tabs/Tab'
 import SliderProduct from '../../components/sliderProduct/SliderProduct'
 import './home.scss'
 import Layout from '../../components/layout/Layout'
+import Modal from '../../components/modal/Modal'
+
 
 
 const Home = () => {
   return (   
     <Layout>          
-      <div className="home-container">
+       <div className="home-container">
         <Hero />
         <Lowbar />        
         <Bar />
@@ -21,9 +23,15 @@ const Home = () => {
         <SliderProduct title={"New Arrival Products"} desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat."}/>
         <div className="line"></div>
         <BrandSlider /> 
-      </div>
+      
+      </div> 
 
-    </Layout>    
+  </Layout>   
+  // <>
+  // <Modal />
+  // </>  
+  
+     
   )
 }
 

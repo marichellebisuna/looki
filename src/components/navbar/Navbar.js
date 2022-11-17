@@ -108,8 +108,8 @@ window.onscroll=()=>{
 
 
   </div> 
- {/* {openSearchPage && <SearchPage setOpen={setOpenSearchPage} />}
-  { <Mylist setShowMyList={setShowMyList} showMyList={showMyList}/>}
+ {openSearchPage && <SearchPage setOpenSearchPage={setOpenSearchPage} />}
+  {/* { <Mylist setShowMyList={setShowMyList} showMyList={showMyList}/>}
   {<SideCart showCart={showCart} setShowCart={setShowCart}/>} */}
   </>
   )

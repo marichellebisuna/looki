@@ -1,14 +1,15 @@
-.productlist{    
+  .productlist{    
   display: flex;    
   padding:20px;
   -webkit-box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
   box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
+ 
   .left{       
     .product-wrapper{
       width:300px;
       height:300px;
       position: relative;    
-      // overflow: hidden;   
+    //  overflow: hidden;   
       img{      
         object-fit: cover;
         transition: var(--transition);
@@ -57,6 +58,7 @@
           cursor: pointer;  
           opacity: 0;  
           transition: var(--transition);
+         
           &:hover{
             opacity: 1;
           }    
@@ -75,7 +77,8 @@
               background-color: var(--primary-color);
               color:white;              
             }       
-            }          
+            } 
+                  
           }
       }
          

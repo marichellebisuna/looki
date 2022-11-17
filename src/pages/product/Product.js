@@ -10,6 +10,11 @@ import './product.scss'
 
 const Product = () => {
   const [active, setActive] = useState("tab1")
+  const [index, setIndex] = useState(0)
+
+  const handleOpen =(i)=>{
+    setIndex(i)
+  }
 
   const handleTab1=()=>{    
    setActive("tab1")
@@ -32,7 +37,7 @@ const Product = () => {
       
     
    }
-  
+ 
   return (
     <Layout>    
     <Breadcrumbs />
@@ -40,21 +45,14 @@ const Product = () => {
    <div className="top">
      <div className="images">
       <div className="main">
-        <img src={product.img[0]} alt="" srcset="" />
+        <img src={product.img[index]} alt="" srcset="" />
         <div className="new"><span className='new'>new</span> </div>
       </div>
-
-          <div className="sub">
-        {product.img.map(item=>(
-           <div className="sub1"><img src={item} alt="" srcset="" /></div> 
-        ))}
-        {/* <div className="sub1 active"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/1.jpg" alt="" srcset="" /></div>    
-        <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg" alt="" srcset="" /></div>    
-        <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg" alt="" srcset="" /></div>    
-        <div className="sub1"><img src="https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg" alt="" srcset="" /></div>            */}
-      </div>
-    
-    
+      <div className="sub">
+        {product.img.map((item,i)=>(
+            <div className="sub1"><img src={item} alt="" srcset="" onClick={()=>handleOpen(i)}/></div> 
+        ))}        
+      </div>    
     </div>
     <div className="product-details">
       <h1>{product.title}</h1>
@@ -90,15 +88,15 @@ const Product = () => {
         <button className="submit" type="submit"><AddOutlined/> Add to cart</button>
       </div>
       <div className="heart">
-          <FavoriteBorderOutlined />
+          <FavoriteBorderOutlined  className='icon'/>
           Add to wishlist
       </div>
       <div className="share">
         <span>Share</span> 
-        <FacebookOutlined />
-        <Twitter />
-        <Google />
-        <Pinterest />
+        <FacebookOutlined  className='icon'/>
+        <Twitter  className='icon'/>
+        <Google  className='icon'/>
+        <Pinterest  className='icon'/>
       </div>
     </div>
    </div>

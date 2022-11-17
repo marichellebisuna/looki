@@ -41,12 +41,20 @@
          padding: 0;
          padding-left:20px;
          text-transform: capitalize;
+         
         &.tab{       
           display:none;
         &.active{
            display: block;
           }        
-         }         
+         }  
+         li{
+          cursor: pointer;
+          &:hover{
+          color:var(--primary-color)
+        } 
+         }
+               
         }
     }
   }
@@ -76,21 +84,36 @@
         font-size: 17px;   
         margin: 0;
         text-transform: capitalize;
+        cursor: pointer;
         input[type=checkbox]{
-          opacity: 0;
+          opacity: 0;          
         }
+        &:hover{
+          color:var(--primary-color);
+         .checkbox.active, .checkbox{
+            border-color: var(--primary-color);
+          }  
+        } 
         .checkbox{
           border: 1px solid #e5e5e5e5;
+          border-radius: 3px;
           width:20px;
           height:20px;  
+         
         }        
         label{
           padding-left: 10px;
+          cursor: pointer;
         }        
         &.tag{         
             border: 1px solid #e5e5e5e5;
             padding:10px 30px;
            width:max-content;
+           &:hover{            
+            color:white;
+            border-color: var(--primary-color);
+            background-color: var(--primary-color) ;  
+          } 
         }
       }    
     }

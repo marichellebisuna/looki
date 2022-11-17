@@ -1,16 +1,16 @@
 import {useState} from 'react'
-import { FavoriteBorderOutlined, Search, Star } from '@material-ui/icons'
+import { Close, FavoriteBorderOutlined, Search, Star } from '@material-ui/icons'
 import './productList.scss'
 import Modal from '../modal/Modal'
 import { Link } from 'react-router-dom'
 
 const ProductList = ({product}) => {
 const [show, setShow] = useState(false)
+const [modal, setModal] = useState(false)
 
-const handleModal=()=>{
-  setShow(true)
-}
   return (
+    <>
+     {modal&& <Modal setModal={setModal} product={product}/> } 
     <div className='productlist'>
       <div className="left">
         <div className="product-wrapper" >
@@ -22,7 +22,8 @@ const handleModal=()=>{
             </div>  
             <div className="picons">                  
               <FavoriteBorderOutlined className="icon"/>             
-              <Search className="icon" onClick={handleModal}/>
+              <Search className="icon" onClick={()=>setModal(true)} />
+               
             </div> 
           </div>
                    
@@ -47,8 +48,23 @@ const handleModal=()=>{
       <button type="submit">Add to Cart</button>   
                 
       </div>
-      {show && <Modal />}
+       
     </div>
+   {/* {modal && 
+      <div className='modal' onClick={()=>setModal(false)}>
+      <div className="container">
+        <div className="top">
+          <div className="spacer"></div>
+          <div className="x" onClick={()=>setModal(false)}><Close /></div>
+        </div>
+      <div className="bottom">
+        <div className="title">{product.title}</div>
+        <img src={product.img[0]}alt="" srcset="" />
+      </div>
+      </div>        
+      </div>
+    } */}
+    </>
   )
 }
 

@@ -1,11 +1,15 @@
 import { FavoriteBorderOutlined, Search, ShoppingCartOutlined, Star } from '@material-ui/icons'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Product.scss'
-// import {products} from '../../data'
+import Modal from '../modal/Modal'
 
 const Product = ({product}) => {
- 
+const [modal, setModal] = useState(false)
+
   return (
+    <>
+   
     <div className="product-item">
       <div className="top">
         <div className="product-wrapper" >
@@ -19,7 +23,8 @@ const Product = ({product}) => {
             </div>  
             <div className="picons">                     
               <FavoriteBorderOutlined className="icon"/>             
-              <Search className="icon"/>
+              <Search className="icon" onClick={()=>setModal(true)}/>
+              
             </div> 
           </div>
         </div>
@@ -39,6 +44,9 @@ const Product = ({product}) => {
         </div>        
       </div>
     </div>
+
+    {modal && <Modal setShow={setModal}/>}
+    </>
   )
 }
 

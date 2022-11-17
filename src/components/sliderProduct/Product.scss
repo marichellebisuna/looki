@@ -3,13 +3,16 @@
   flex-direction: column; 
   -webkit-box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
   box-shadow: 4px 4px 10px -5px rgba(0,0,0,0.43); 
+  
   .top{    
-    margin: 20px; 
+     margin: 20px; 
+      background-color: pink;     
     .product-wrapper{
       width:300px;
       height:300px;
       position: relative;    
-      overflow: hidden;   
+     
+      // overflow: hidden;   
       img{      
         object-fit: cover;
         transition: var(--transition);
@@ -17,7 +20,8 @@
         //   transform: scale(1.1);
         // }
       } 
-      .inner{          
+      .inner{    
+        
         padding: 0 10px;    
         display: flex;
         flex-direction: column;
