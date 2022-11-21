@@ -1,3 +1,4 @@
+import { Close } from "@material-ui/icons"
 import { CloseOutlined } from "@mui/icons-material"
 import "./mylist.scss"
 
@@ -5,12 +6,12 @@ const Mylist = ({setShowMyList, showMyList}) => {
 
   return (        
   <div className={showMyList?"wrapper show":"wrapper"} onClick={()=>setShowMyList(false)}>   
-    <div className={showMyList?"list open":"list close"}>       
+    <div className={showMyList?"list open":"list"}>       
 
         <div className="top">
           <span>Wishlist</span>
         <div className="close" 
-         onClick={()=>setShowMyList(false)}>x</div>
+         onClick={()=>setShowMyList(false)}><Close /></div>
         </div>
 
         <div className="line"></div>
@@ -47,7 +48,7 @@ const Mylist = ({setShowMyList, showMyList}) => {
         
       </div>
    
-    </div>   
+  </div>   
   )
 }
 

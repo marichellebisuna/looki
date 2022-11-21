@@ -280,3 +280,100 @@ export const slide = [
   // },
  
 ]
+export const wish = [
+  {
+    id:0,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/9.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"On Trend Makeup and Beauty Cosmetics",
+    price:11.90,
+    type:"new", 
+    discount:0, 
+    
+  },
+  {
+    id:1,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/10.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"The Cosmetics and Beauty Brand Shoppe",
+    price:21.51,
+    type:"onsale",
+    discount:10, 
+    
+
+  },
+  {
+    id:2,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/11.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"Orginal Age Defying Cosmetics Makeup",
+    price:11.90,
+    type:"upcoming",   
+    discount:0, 
+
+  },
+  {
+    id:3,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/12.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"All Natural Makeup Beauty Cosmetics",
+    price:18.90,
+    type:"featured", 
+    discount:20, 
+
+  },
+  {
+    id:4,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/13.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"On Trend Makeup and Beauty Cosmetics",
+    price:11.90,
+    type:"onsale", 
+    discount:10, 
+
+  },
+  
+]
+export const cart = [ 
+  {
+    id:10,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/6.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"On Trend Makeup and Beauty Cosmetics",
+    price:11.90,
+    type:"onsale",  
+    discount:10, 
+
+  },
+  {
+    id:11,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/2.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"The Cosmetics and Beauty Brand Shoppe",
+    price:21.51,
+    type:"featured",
+    discount:20, 
+
+  },
+  {
+    id:12,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/4.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"Orginal Age Defying Cosmetics Makeup",
+    price:11.90,
+    type:"new", 
+    discount:0, 
+
+  },
+  {
+    id:13,
+    img:["https://htmldemo.net/looki/looki/assets/img/product/6.png", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/2.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/3.jpg", "https://htmldemo.net/looki/looki/assets/img/slider/thumb/4.jpg"],
+    desc:["Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.","Part of the Kaval Collection.","Regular fit is eased, but not sloppy, and perfect for any activity.","Plain-woven Face Cream specifically constructed for freedom of movement."],
+    title:"All Natural Makeup Beauty Cosmetics",
+    price:18.90,
+    type:"onsale",  
+    discount:10, 
+
+  },
+  
+]

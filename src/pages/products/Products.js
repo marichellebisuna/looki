@@ -23,7 +23,7 @@ const Products = () => {
     setValue(newValue);
   };
 
-  const [active, setActive] = useState("tab1")
+  const [active, setActive] = useState("")
   const handleTab1=()=>{
     setActive("tab1")
   }
@@ -42,8 +42,8 @@ const Products = () => {
             <div className="line"/>  
             <div className="container">
               <div className="accordion">
-              <div className="name">
-                <div className={active==="tab1"?"title active":"title"} onClick={handleTab1}>Shoes</div>
+              <div className="name" onClick={handleTab1}>
+                <div className={active==="tab1"?"title active":"title"} >Shoes</div>
                 {active==="tab1"?<RemoveOutlined/>:<AddOutlined/> }              
               </div>
               <ul className={active==="tab1"?"active":"tab"}>
@@ -55,8 +55,8 @@ const Products = () => {
               </ul>
             </div>
             <div className="accordion">
-              <div className="name">
-                <div className={active==="tab2"?"title active":"title"} onClick={handleTab2}>Luggage & bags</div>
+              <div className="name" onClick={handleTab2}>
+                <div className={active==="tab2"?"title active":"title"} >Luggage & bags</div>
                 {active==="tab2"?<RemoveOutlined/>:<AddOutlined/> }               
               </div>
               <ul className={active==="tab2"?"active":"tab"}>
@@ -68,8 +68,8 @@ const Products = () => {
               </ul>
             </div>
             <div className="accordion">
-              <div className="name">
-                <div className={active==="tab3"?"title active":"title"} onClick={handleTab3}>Accessories</div>
+              <div className="name" onClick={handleTab3}>
+                <div className={active==="tab3"?"title active":"title"} >Accessories</div>
                 {active==="tab3"?<RemoveOutlined/>:<AddOutlined/> }               
                
               </div>

@@ -12,7 +12,7 @@ const Modal = ({setModal, product}) => {
   }
 console.log(product)
   return (
-    <div className="modal" >
+    <div className="modal">
       <div className="container">
         <div className="together">
           <div className="spacer"></div>

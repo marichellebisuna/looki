@@ -1,213 +1,266 @@
-.topbar{
-  background-color: black;
-  color:white;
-  width:100%;   
-  margin:0 auto;
-  position: relative;
-  padding:10px 0;  
-  .container{
-    width:80%;
-    margin: 0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;    
-  .left{
-    display: flex;
-    flex-direction: row;    
-    .socials{
-      padding-right: 20px;  
-      .icon{
-      margin-right:7px;
-      cursor: pointer;
-      transition: 0.5s all ease;
-      &:hover{
-        color:var(--primary-color);   
+.menu{
+ 
+  .navbar{
+    width:100%;
+    padding: 10px 0;
+    position: fixed;  
+    background-color: white;
+    z-index: 999;
+    margin-bottom: 0;
+    top:0;
+    &.shadow{
+      top:0;
+      -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
+      box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);    
       }
-      }    
-    } 
-    .contact{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s all ease;
-      &:hover{
-        color:var(--primary-color);   
+    .container{
+      width:80%;
+      margin:auto;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      position:relative;
+      .logo{
+        cursor: pointer;
       }
-    .icon{
-      margin-right:7px;
-      cursor: pointer;      
-      }   
+      .menu ul{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        // position:relative;
+        li{
+          margin-left: 20px;
+          list-style: none;
+          cursor: pointer;
+          transition: 0.5s all ease;
+          &:hover{
+            color:var(--primary-color);
+          }
+        }
+        a{
+          text-decoration: none;
+          cursor: pointer;
+        }      
+      }
+      .icons{   
+        cursor: pointer;     
+        display: flex;
+        align-items: center;
+        gap:5px;
+        .numbered{
+          position: relative;         
+          .total{
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            padding: 2px 6px;
+            color:white;
+            font-size: 10px;
+            position:absolute;
+            top:-10px;
+            right:-10px;
+          }
+        }
+        .icon{        
+          transition: 0.5s all ease;
+          display: flex;
+          align-items: baseline;          
+          &:hover{
+            color:var(--primary-color);
+          }
+        }  
+       
+            
+      }
     }
   }
-  .right{
-    display: flex;
-    flex-direction: row; 
-    align-items: center;  
-    .settings{  
-      cursor: pointer;
-      transition: 0.5s all ease;
-      &:hover{
-        color:var(--primary-color);   
-      }     
-      .account{
-        position: absolute;
-        top:51px;
-        right:298px;
-        z-index:2;
-        background-color: white;
-        color:gray; 
-        -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
-        box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
-        transition: 0.3s all ease;
-        opacity:1;
-        &.close{
-          opacity:0;         
-        }     
-        .line{
-          border-bottom: 1px solid rgb(211, 203, 203);
-          width:80%;
-          margin: 0 auto;
-        }
-        .list{
-         list-style: none;
-          margin:10px 30px;     
-        }       
-      }
+  .wish{ 
+    background-color: rgba(0,0,0,0.8);
+    width:100vw;
+    height:100vh; 
+    top: 0; 
+    left:0;
+    position: fixed;          
+    opacity:0; 
+    transition: var(--transition); 
+     z-index: 1;
+    &.show{
+      opacity: 1;     
+            
     } 
-    .dollar{   
-      padding-left:10px;
-      cursor: pointer;
-      transition: 0.5s all ease;
-      &:hover{
-        color:var(--primary-color);   
-      }        
-      .account{
-        position: absolute;
-        top:51px;
-        right:212px;
-        z-index:2;
-        background-color: white;
-        color:gray; 
-        -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
-        box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);      
-        transition: 0.3s all ease;
-        opacity:1;
-        &.close{
-          opacity:0;         
-        }     
-        .line{
-          border-bottom: 1px solid rgb(211, 203, 203);
-          width:80%;
-          margin: 0 auto;
+    .list{
+      background-color: white;
+      width:400px;
+      height:100vh;
+      position:absolute;
+      top:0;
+      right:0;
+      padding:20px;            
+      transition: all 850ms ease;            
+        &.close{                
+          right:-400px;                  
+        }            
+      .top{
+        display: flex;
+        justify-content: space-between;
+        .close{
+          cursor: pointer;
         }
-        .list{
-         list-style: none;
-          margin:10px 30px;           
-        }       
       }
-    } 
-    .language{  
-      padding-left:10px;  
-      cursor: pointer;
-      transition: 0.5s all ease;
-      &:hover{
-        color:var(--primary-color);   
-      }       
-      .account{
-        position: absolute;
-        top:51px;
-        right:100px;
-        z-index:2;
-        background-color: white;
-        color:gray; 
-        -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
-        box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);      
-        transition: 0.3s all ease;
-        opacity:1;
-        &.close{
-          opacity:0;         
-        }     
-        .line{
-          border-bottom: 1px solid rgb(211, 203, 203);
-          width:80%;
-          margin: 0 auto;
+      .list_item{
+        display: flex;
+        padding:10px 0;
+        gap:15px;
+        img{
+          padding: 0 10px;
+          width: 90px;
+          height: 72px;
+          cursor: pointer; 
         }
-        .list{
-          list-style: none;
-          margin:10px 30px;             
+        .desc{
+          .title{
+            margin-bottom: 10px; 
+            cursor: pointer;  
+          }
         }
-       
       }
-    } 
+      .line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+      }
+      .delete{
+        font-size: 8px !important;
+        cursor: pointer;
+      }
+      button.button{
+        a{
+          text-decoration: none;
+          color: white;
+        } 
+        margin-top: 20px;
+        background-color: var(--primary-color);
+        padding: 10px 30px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        border: none;
+        
+        transition: all 850ms ease;
+        cursor: pointer;
+        &:hover{
+          background-color: black;        
+          color: white;
+        cursor: pointer;
+        }        
+      }
+      
+      
+    }
+  
   }
-   }
+  .cart{ 
+    background-color: rgba(0,0,0,0.8);
+    width:100vw;
+    height:100vh; 
+    top: 0; 
+    left:0;
+    position: fixed;               
+    opacity:0; 
+    transition: var(--transition); 
+    z-index: 99999;
+    &.show{
+      opacity: 1;     
+           
+    } 
+    .list{
+      background-color: white;
+      width:400px;
+      height:100vh;
+      position:fixed;
+      top:0;
+      right:0;
+      padding:20px; 
+
+      transition: all 850ms ease;            
+        &.open{                
+          right:-400px;   
+          cursor: pointer;    
+          
+        }            
+        .top{
+          display: flex;
+          justify-content: space-between;
+          .close{
+            cursor: pointer;    
+          }
+        }
+        .list_item{
+          display: flex;
+          padding:10px 0;
+          gap:15px;
+
+
+          img{
+            padding: 0 10px;
+            width: 90px;
+            height: 72px;  
+            cursor: pointer;    
+
+          }
+          .desc{
+            .title{
+              margin-bottom: 10px; 
+              cursor: pointer;    
+
+            }
+          }
+        }
+        .line{
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc;
+          margin: 1em 0;
+          padding: 0;
+        }
+        .delete{
+          font-size: 8px !important;
+          cursor: pointer;    
+
+        }
+        .subtotal{
+          display: flex;
+          justify-content: space-between;
+        }
+        .buttons{
+          margin-bottom: 5px;    
+          a{
+            text-decoration: none;
+            color: white;
+          }  
+            button{
+              margin: 5px 15px 5px 0;
+              background-color: var(--primary-color);
+              padding: 10px 30px;
+              color: white;
+              text-transform: uppercase;
+              font-size: 17px;
+              border: none;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              &:hover{
+                background-color: black;        
+                color: white;
+              }
+            }
+        }
+    }
+  
+}
+  
+  
 }
 
-.navbar{
-  width:100%;
-  padding: 10px 0;
-  position: fixed;  
-  background-color: white;
-   z-index: 99999;
-  margin-bottom: 110px;
-  &.shadow{
-    top:0;
-    -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32); 
-    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.32);    
-    }
-  .container{
-    width:80%;
-    margin:auto;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    position:relative;
-    .logo{
-      cursor: pointer;
-    }
-    .menu ul{
-      display: flex;
-      align-items: center;
-      font-weight: 400;
-      li{
-        margin-left: 20px;
-        list-style: none;
-        cursor: pointer;
-        transition: 0.5s all ease;
-        &:hover{
-          color:var(--primary-color);
-        }
-      }
-      a{
-        text-decoration: none;
-        cursor: pointer;
-      }      
-    }
-    .icons{   
-      cursor: pointer;     
-      display: flex;
-      align-items: center;
-      .numbered{
-        position: relative;         
-        .total{
-          background-color: var(--primary-color);
-          border-radius: 50%;
-          padding: 2px 6px;
-          color:white;
-          font-size: 10px;
-          position:absolute;
-          top:-10px;
-          right:-10px;
-        }
-       }
-      .icon{        
-        transition: 0.5s all ease;
-        display: flex;
-        align-items: baseline;
-        &:hover{
-          color:var(--primary-color);
-        }
-      }      
-    }
-  }
-}

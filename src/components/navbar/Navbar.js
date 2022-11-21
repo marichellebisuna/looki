@@ -1,71 +1,48 @@
-import { Search } from '@material-ui/icons'
+import { Close, Search } from '@material-ui/icons'
 import { FavoriteBorderOutlined, ShoppingBagOutlined, Facebook, Twitter, YouTube, Instagram, Call, KeyboardArrowDown } from '@mui/icons-material'
-import {useState } from 'react'
+import {useRef, useState } from 'react'
 import './navbar.scss'
 import SearchPage from '../search/Search'
-import Mylist from '../mylist/Mylist'
-import SideCart from '../sidecart/SideCart'
+// import SideCart from '../sidecart/SideCart'
 import { Badge } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+import {cart, wish} from '../../data'
 
 const Navbar = () => {
+  
 const [isScroll, setIsScroll] = useState(false)
 const [openSearchPage, setOpenSearchPage] = useState(false)
-const [openSetting, setOpenSetting] = useState(false)
-const [openDollar, setOpenDollar] = useState(false)
-const [openLanguage, setOpenLanguage] = useState(false)
 const [showMyList, setShowMyList] = useState(false)
 const [showCart, setShowCart] = useState(false)
+const listRef= useRef()
+const listRef2= useRef()
+
+
+const handleSearch=()=>{ 
+  setOpenSearchPage(true)
+}
+const handleShowMyList=()=>{  
+  listRef.current.style.zIndex=99999;
+  setShowMyList(true)
+}
+const handleCart=()=>{ 
+   listRef2.current.style.zIndex=99999;
+  setShowCart(true)
+}
+const handleClose=()=>{ 
+  setShowCart(false)
+  setShowMyList(false)
+  listRef.current.style.zIndex=1;
+  listRef2.current.style.zIndex=1;
+
+}
+
 window.onscroll=()=>{
   setIsScroll(window.pageYOffset===0 ? false : true)
   return ()=>window.onscroll=null
 }
   return (
-    <>
-  <div className="topbar">
-    <div className="container">   
-      <div className="left">
-        <div className="socials">
-        <Facebook className="icon"/>
-        <Twitter className="icon"/>
-        <YouTube className="icon"/>
-        <Instagram className="icon"/>
-        </div>
-        <div className="contact">
-          <Call className="icon"/>
-          <span> (+123)4567890</span>
-        </div>
-      </div>
-      <div className="right">
-        <div className="settings">
-          <span onClick={()=>setOpenSetting(!openSetting)}>Setting <KeyboardArrowDown /></span>
-          <div className={openSetting?"account":"account close"}>            
-            <div className="list">My Account</div> 
-            <div className="line"></div>           
-            <div className="list">Checkout</div>
-            <div className="line"></div>
-            <div className="list">Sign Out</div>
-          </div>
-        </div>
-        <div className="dollar">
-        <span onClick={()=>setOpenDollar(!openDollar)}>USD $ <KeyboardArrowDown /></span>
-          <div className={openDollar?"account":"account close"}>
-            <div className="list">EUR £</div>
-            <div className="line"></div>
-            <div className="list">US $</div>
-          </div>
-        </div>
-        <div className="language">
-        <span onClick={()=>setOpenLanguage(!openLanguage)}><img src="https://htmldemo.net/looki/looki/assets/img/logo/us-flag.jpg" alt="" srcset="" /> English <KeyboardArrowDown /></span>
-        <div className={openLanguage?"account":"account close"}>
-            <div className="list"><img src="https://htmldemo.net/looki/looki/assets/img/logo/us-flag.jpg" alt="" srcset="" /> English</div>
-            <div className="line"></div>
-            <div className="list"><img src="https://htmldemo.net/looki/looki/assets/img/logo/france.jpg" alt="" srcset="" /> Francais</div>
-          </div>
-        </div>
-      </div>
-     </div>
-  </div>
+    <div className="menu">
   <div className={isScroll?"navbar shadow":"navbar"}>
     <div className="container">
       <div className="logo"><Link to='/'><img src="https://htmldemo.net/looki/looki/assets/img/logo/logo.png" alt="" srcset="" /></Link></div>
@@ -76,42 +53,77 @@ window.onscroll=()=>{
           <li><Link to="/contact">Contact Us</Link></li>
         </ul>
       </div>
-      <div className="icons">
-        <span onClick={()=>setOpenSearchPage(true)}>
-          <Search className="icon" />        
-        </span>
-        
-        <span className="numbered" onClick={()=>setShowMyList(!showMyList)}>    
-        <Badge badgeContent={4} color="primary">
-           <FavoriteBorderOutlined />   
-        </Badge>  
-        
-        <span className='total'>5</span>
-      
-        </span>
-        
-        <span className="numbered" style={{'paddingLeft':'5px'}} onClick={()=>
-       
-         setShowCart(!showCart)}
-        
-        >
-            <Badge badgeContent={4} color="primary">
+      <div className="icons">       
+        <span onClick={handleSearch}><Search className="icon" /></span>
+        <span onClick={handleShowMyList}>
+            <Badge badgeContent={wish.length} color="primary">
+              <FavoriteBorderOutlined />   
+            </Badge>               
+        </span>   
+        <span onClick={handleCart}>
+            <Badge badgeContent={cart.length} color="primary">
               <ShoppingBagOutlined />
-            </Badge>  
-       
-          <span className='total'>5</span>
-         
+            </Badge>              
         </span>
       </div>
     </div>
-   
-
-
   </div> 
- {openSearchPage && <SearchPage setOpenSearchPage={setOpenSearchPage} />}
-  {/* { <Mylist setShowMyList={setShowMyList} showMyList={showMyList}/>}
-  {<SideCart showCart={showCart} setShowCart={setShowCart}/>} */}
-  </>
+    {openSearchPage && <SearchPage setOpenSearchPage={setOpenSearchPage} />}
+    <div className={showMyList?"wish show":"wish"} onClick={handleClose} ref={listRef}>           
+      <div className={showMyList?"list":"list close"}> 
+        <div className="top">
+          <span>Wishlist</span>
+        <div className="close" 
+        onClick={handleClose}><Close /></div>
+        </div>  
+        <div className="line" ></div>    
+        {wish.map((item=>(
+          <>          
+            <div className="list_item" key={item.id}>
+              <img src={item.img[0]} alt="" srcset="" />
+              <div className="desc">
+                <div className="title">{item.title}</div>
+                <div className="price">1 x ${item.price.toFixed(2)}</div>
+              </div>
+              <div className="delete"><Close /></div>
+            </div>      
+            <div className="line"></div>
+         </> 
+        )))}
+        <button type="submit" className='button'><Link to="/wishlist">View Wishlist</Link></button>               
+      </div>         
+    </div>  
+    <div className={showCart?"cart show":"cart"} onClick={handleClose} ref={listRef2}>   
+      <div className={showCart?"list ":"list open"}>  
+
+        <div className="top">
+          <span>Cart</span>
+          <div className="close" 
+          onClick={handleClose}><Close /></div>
+        </div>
+
+        <div className="line"></div>
+        {cart.map(item=>
+          <div className="list_item">
+          <img src={item.img[0]} alt="" srcset="" />
+          <div className="desc">
+            <div className="title">{item.title}</div>
+            <div className="price">1 x ${item.price.toFixed(2)}</div>
+          </div>
+          <div className="delete"><Close /></div>
+        </div>
+          )}
+        
+        <div className="line"></div>
+
+        <div className="buttons">
+          <button type="submit"><Link to="/cart"> Cart</Link></button>   
+          <button type="submit"><Link to="/checkout">Checkout</Link></button>  
+        </div>
+        <span>Free Shipping on All Orders Over $100!</span>
+      </div>
+    </div>     
+  </div>
   )
 }
 

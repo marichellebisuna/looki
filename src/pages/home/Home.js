@@ -15,7 +15,7 @@ const Home = () => {
   return (   
     <Layout>          
        <div className="home-container">
-        <Hero />
+        {/* <Hero /> */}
         <Lowbar />        
         <Bar />
         <Tab />

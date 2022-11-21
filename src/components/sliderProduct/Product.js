@@ -9,7 +9,7 @@ const [modal, setModal] = useState(false)
 
   return (
     <>
-   
+     {modal && <Modal setModal={setModal} product={product}/>}
     <div className="product-item">
       <div className="top">
         <div className="product-wrapper" >
@@ -23,8 +23,7 @@ const [modal, setModal] = useState(false)
             </div>  
             <div className="picons">                     
               <FavoriteBorderOutlined className="icon"/>             
-              <Search className="icon" onClick={()=>setModal(true)}/>
-              
+              <Search className="icon" onClick={()=>setModal(true)}/>              
             </div> 
           </div>
         </div>
@@ -43,9 +42,7 @@ const [modal, setModal] = useState(false)
           <ShoppingCartOutlined className="cart" />
         </div>        
       </div>
-    </div>
-
-    {modal && <Modal setShow={setModal}/>}
+    </div> 
     </>
   )
 }

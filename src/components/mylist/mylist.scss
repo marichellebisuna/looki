@@ -1,31 +1,38 @@
 .wrapper{
   background-color: rgba(0,0,0,0.8);
   width:100vw;
-  height:100vh;  
+  height:100vh; 
+  top: 0; 
+  left:0;
   position: fixed;  
   transition: all 850ms ease; 
+  z-index: 2;
   opacity:0;  
   &.show{
     opacity: 1; 
-    transition: all 850ms ease;    
+    // transition: all 850ms ease;    
   } 
   .list{
     background-color: white;
     width:400px;
     height:100vh;
     position:absolute;
+    top:0;
     right:0;
     padding:20px; 
     cursor: pointer;    
+    
+   // transform: translateX(0);
     transition: all 850ms ease;
       &.open{ 
-        transition: all 850ms ease;       
-         right:0;        
+        // transition: all 850ms ease;       
+         transform: translateX(400px);
+       right:-400px; 
       }
-      &.close{
-        transition: all 850ms ease;        
-        right:-400px;        
-     }
+    //   &.close{
+    //     transition: all 850ms ease;        
+    //           
+    //  }
       .top{
         display: flex;
         justify-content: space-between;
@@ -33,6 +40,7 @@
       .list_item{
         display: flex;
         padding:10px 0;
+        gap:15px;
         img{
           padding: 0 10px;
           width: 90px;

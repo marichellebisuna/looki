@@ -18,14 +18,11 @@
     right:0;
     padding:20px;        
     transition: all 850ms ease;
-      &.expand{ 
-        transition: all 850ms ease;       
-         right:0;        
+      &.open{ 
+        transform: translateX(400px);   
+         right:-400px;        
       }
-      &.shrink{
-        transition: all 850ms ease;        
-        right:-350px;        
-     }
+    
       .top{
         display: flex;
         justify-content: space-between;
