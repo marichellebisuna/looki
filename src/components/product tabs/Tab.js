@@ -4,24 +4,29 @@ import {KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons';
 import {products} from '../../data'
 import {useEffect, useRef, useState} from 'react'
 import TypeTab from '../typeTab/TypeTab';
-import {type} from '../../data';
-// import {products} from '../../data';
+ import {type} from '../../data';
+ 
 
 const Tab = () => {
 const listRef = useRef();
-console.log(type);
+
 const [slideNumber, setSlideNumber] = useState(0)
-const [selected, setSelected] = useState("new")
-const [data, setData] = useState([])
+const [selected, setSelected] = useState("all")
+const [menu, setMenu] = useState(products)
 
-// useEffect(() => { 
-// switch(selected){
-//   case "new":
-//     setData
-// }
- 
-// }, [selected])
+const category = ["all", ...new Set(products.map(item => item.type))]
 
+const filterProducts = (type) =>{
+  if (type === "all"){
+    setMenu(products)
+    setSelected(type)
+    return
+  }
+  const newItems=products.filter(item=>item.type===type)
+  setMenu(newItems)
+  setSelected(type)  
+}
+console.log(selected)
   const handleArrow=(direction) => {
     let distance = listRef.current.getBoundingClientRect().x-141
     console.log(distance)
@@ -47,22 +52,23 @@ const [data, setData] = useState([])
         </div>
         <ul>
           {
-            type.map((item, index) => {
+            category.map((item, index) => {
               return (<TypeTab 
               key={index} 
-              title={item.title} 
-              active={selected===item.id} 
-              id={item.id} 
-              setSelected={setSelected}/>
+              title={item} 
+              active={item === selected}               
+              filterProducts={filterProducts}/>
           )})}
-        </ul>
-        
+        </ul>        
       </div>
       <div className="products" >
         
         <KeyboardArrowLeft className="arrow left" onClick={()=>handleArrow("left")} />
         <div className="productid" ref={listRef}>
-          {products.map(product =><Product product={product} key={product.id} listRef={listRef}/>)          
+          {menu.map(product=>  
+          <Product product={product} key={product.id} listRef={listRef}/> 
+
+          )          
           }
         </div>
         

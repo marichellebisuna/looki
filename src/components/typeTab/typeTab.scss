@@ -1,8 +1,8 @@
 .typeItem{
   font-weight: 600;
   cursor: pointer;
+  font-size: 20px;  
   &.active{
-    color:var(--primary-color);
-    text-decoration:underline;
+    color:var(--primary-color);  
   }
 }

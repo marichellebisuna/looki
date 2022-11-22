@@ -1,10 +1,11 @@
 import './typeTab.scss';
 
-const TypeTab = ({id, title, active, setSelected}) => {
+const TypeTab = ({ title, active, filterProducts}) => {
+  
   return (
     <li className={
       active ?"typeItem active":"typeItem"} 
-      onClick={()=>setSelected(id)}>
+      onClick={()=>filterProducts(title)}>
       {title}
     </li>
   )

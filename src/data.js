@@ -241,7 +241,7 @@ export const type = [
     title:"New Products",
   },
   {
-    id:"sale",
+    id:"onsale",
     title:"OnSale",
   },
   {
