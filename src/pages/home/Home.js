@@ -11,8 +11,7 @@ import Layout from '../../components/layout/Layout'
 
 
 const Home = () => {
-  return (  
-     
+  return (       
     <Layout>          
        <div className="home-container">
         <Hero/>

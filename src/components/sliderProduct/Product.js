@@ -22,8 +22,8 @@ const [modal, setModal] = useState(false)
               <div className="type" >{product.type}</div>              
             </div>  
             <div className="picons">                     
-              <FavoriteBorderOutlined className="icon"/>             
-              <Search className="icon" onClick={()=>setModal(true)}/>              
+              <FavoriteBorderOutlined className="icon1"/>             
+              <Search className="icon2" onClick={()=>setModal(true)}/>              
             </div> 
           </div>
         </div>
