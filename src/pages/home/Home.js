@@ -7,30 +7,24 @@ import Tab from '../../components/product tabs/Tab'
 import SliderProduct from '../../components/sliderProduct/SliderProduct'
 import './home.scss'
 import Layout from '../../components/layout/Layout'
-import Modal from '../../components/modal/Modal'
 
 
 
 const Home = () => {
-  return (   
+  return (  
+     
     <Layout>          
        <div className="home-container">
-        {/* <Hero /> */}
+        <Hero/>
         <Lowbar />        
         <Bar />
         <Tab />
         <BottomBanner /> 
         <SliderProduct title={"New Arrival Products"} desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat."}/>
         <div className="line"></div>
-        <BrandSlider /> 
-      
+        <BrandSlider />       
       </div> 
-
-  </Layout>   
-  // <>
-  // <Modal />
-  // </>  
-  
+  </Layout>    
      
   )
 }

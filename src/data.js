@@ -373,7 +373,6 @@ export const cart = [
     price:18.90,
     type:"onsale",  
     discount:10, 
-
   },
   
 ]
