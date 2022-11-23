@@ -1,11 +1,21 @@
 import { Delete, KeyboardArrowDown, KeyboardArrowUp } from '@material-ui/icons'
-import React from 'react'
+import React, { useState } from 'react'
 import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs'
 import Layout from '../../components/layout/Layout'
 import './wishlist.scss'
 import {wish} from '../../data'
 import { Link } from 'react-router-dom'
+
 const Wishlist = () => {
+  const [qty, setQty] = useState(5)
+
+  const handleOperation = (operation, id) => {
+    if (operation === "+" ){
+    setQty(qty + 1)
+    }else{
+      setQty(qty - 1)
+    }
+  }
   return (
   <Layout>    
   <Breadcrumbs title="wishlist"/>
@@ -32,10 +42,10 @@ const Wishlist = () => {
                  <td> <span className="instock">In Stock</span></td>
                  <td>
                    <div className="product-count">
-                     <input type="number" name="" id="" min="1" value="1" step="1"/>
+                     <input type="number" name="" id="" min="1" value={setQty(item.qty)} step="1"/>
                      <div className="button-group">
-                       <div className="icon"><KeyboardArrowUp/></div>
-                       <div className="icon"><KeyboardArrowDown/></div>                    
+                       <div className="icon"><KeyboardArrowUp onClick={()=>handleOperation("+")}/></div>
+                       <div className="icon"><KeyboardArrowDown onClick={()=>handleOperation("-")}/></div>                    
                      </div>
                    </div>
                  </td>

@@ -11,20 +11,27 @@ import './product.scss'
 const Product = () => {
   const [active, setActive] = useState("tab1")
   const [index, setIndex] = useState(0)
+  const [qty, setQty] = useState(1)
 
   const handleOpen =(i)=>{
     setIndex(i)
   }
-
   const handleTab1=()=>{    
    setActive("tab1")
   }
   const handleTab2=()=>{    
     setActive("tab2")
-   }
-   const handleTab3=()=>{    
-    setActive("tab3")
-   }
+  }
+  const handleTab3=()=>{    
+  setActive("tab3")
+  }
+  const handleQty = (operation) =>{
+    if(operation==="+"){
+      setQty(qty!==20 ? qty + 1 : 20)
+    }else{
+      setQty(qty!==1 ? qty - 1 : 1)
+    }
+  }
 
    const product={    
       id:0,
@@ -79,10 +86,10 @@ const Product = () => {
       </div>
       <div className="addtocart">
         <div className="product-count">
-          <input type="number" name="" id="" min="1" value="1" step="1"/>
+          <input type="number" name="" id="" min="1" value={qty} step="1"/>
           <div className="button-group">
-            <div className="icon"><KeyboardArrowUp/></div>
-            <div className="icon"><KeyboardArrowDown/></div>                    
+            <div className="icon"><KeyboardArrowUp onClick={()=>handleQty("+")}/></div>
+            <div className="icon"><KeyboardArrowDown onClick={()=>handleQty("-")}/></div>                    
           </div>
         </div>
         <button className="submit" type="submit"><AddOutlined/> Add to cart</button>

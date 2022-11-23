@@ -289,7 +289,7 @@ export const wish = [
     price:11.90,
     type:"new", 
     discount:0, 
-    
+    qty:1,
   },
   {
     id:1,
@@ -299,7 +299,7 @@ export const wish = [
     price:21.51,
     type:"onsale",
     discount:10, 
-    
+    qty:1,
 
   },
   {
@@ -310,6 +310,7 @@ export const wish = [
     price:11.90,
     type:"upcoming",   
     discount:0, 
+    qty:1,
 
   },
   {
@@ -320,6 +321,7 @@ export const wish = [
     price:18.90,
     type:"featured", 
     discount:20, 
+    qty:1,
 
   },
   {
@@ -330,6 +332,7 @@ export const wish = [
     price:11.90,
     type:"onsale", 
     discount:10, 
+    qty:1,
 
   },
   
@@ -343,6 +346,7 @@ export const cart = [
     price:11.90,
     type:"onsale",  
     discount:10, 
+    qty:1,
 
   },
   {
@@ -353,6 +357,7 @@ export const cart = [
     price:21.51,
     type:"featured",
     discount:20, 
+    qty:1,
 
   },
   {
@@ -363,6 +368,7 @@ export const cart = [
     price:11.90,
     type:"new", 
     discount:0, 
+    qty:1,
 
   },
   {
@@ -373,6 +379,8 @@ export const cart = [
     price:18.90,
     type:"onsale",  
     discount:10, 
+    qty:1,
+
   },
   
 ]
